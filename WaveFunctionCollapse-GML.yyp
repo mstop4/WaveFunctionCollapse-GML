@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "18cdded2-e9b0-4509-9641-23b2c3117db5",
+            "Value": {
+                "id": "0118314d-ca12-4cce-8205-d6d455118da5",
+                "resourcePath": "sprites\\spr_test\\spr_test.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "33cfe8bc-80a5-479c-bf34-e4ed1e303b55",
             "Value": {
                 "id": "2a0d73b5-5ef2-41cb-945a-158545101c33",
@@ -116,6 +124,14 @@
                 "id": "b38e7d4d-ee3c-446b-ac38-10128f9a2b93",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "b13067fa-54dd-4a8d-ac42-a20781968367",
+            "Value": {
+                "id": "82ad07a1-4bb1-4655-b32f-ec4d359c66f0",
+                "resourcePath": "objects\\obj_test\\obj_test.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -196,6 +212,14 @@
                 "id": "57e21af8-eb27-4c39-a49e-e6bf54614a02",
                 "resourcePath": "views\\d7bc1135-4ff3-4247-9d27-00a298409786.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "db972ef5-a92a-4abf-99a5-42c78cb490d9",
+            "Value": {
+                "id": "6d076d23-f98b-4e7e-a570-ac57f6f3f8ec",
+                "resourcePath": "tilesets\\ts_test\\ts_test.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
