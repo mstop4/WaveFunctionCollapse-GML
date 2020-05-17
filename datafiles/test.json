@@ -1,0 +1,22 @@
+{
+  "symmetry": "X",
+  "tileId": 1,
+  "sides": [
+		{ 
+			"sideGroups": [ 0 ],
+			"neighbours": [ 0 ],
+		},
+		{ 
+			"sideGroups": [ 0 ],
+			"neighbours": [ 0 ],
+		},
+		{ 
+			"sideGroups": [ 0 ],
+			"neighbours": [ 0 ],
+		},
+		{ 
+			"sideGroups": [ 0 ],
+			"neighbours": [ 0 ],
+		},
+  ]
+}

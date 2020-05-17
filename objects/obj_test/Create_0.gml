@@ -3,27 +3,18 @@ init_enums();
 create_test_tiles();
 init_symmetries();
 
-raw_tile = ds_map_create();
+dummy_tile = load_dummy_json();
+var _file = file_text_open_read("test.json");
+var _raw_json = "";
 
-var _side_groups = ds_list_create();
-_side_groups[| 0] = 0;
-ds_map_add_list(raw_tile, "sideGroups", _side_groups);
-
-raw_tile[? "symmetry"] = SYMMETRY.X;
-
-var _neighbours = ds_list_create();
-
-for (var i=0; i<4; i++) {
-	var _side_neighbours = ds_map_create();
-	var _side_neighbour_groups = ds_list_create();
-	
-	_side_neighbour_groups[| 0] = 0;
-	ds_map_add_list(_side_neighbours, "sideGroups", _side_neighbour_groups);
-	_neighbours[| i] = _side_neighbours;
-	ds_list_mark_as_map(_neighbours, i);
+while (!file_text_eof(_file)) {
+	_raw_json += file_text_readln(_file);
 }
 
-ds_map_add_list(raw_tile, "neighbours", _neighbours);
+file_text_close(_file);
 
-var _json = json_encode(raw_tile);
-show_debug_message(_json);
+var _test_json = json_encode(json_decode(_raw_json));
+show_debug_message(_test_json);
+
+var _dummy_json = json_encode(dummy_tile);
+show_debug_message(_dummy_json);

@@ -18,23 +18,47 @@ Sides
 
 
 rawTile: {
-	sideGroups: [ (real) ],
 	symmetry: (SYMMETRY),
-	neighbours: [
-		{ sideGroups: [ (real) ] },
-		{ sideGroups: [ (real) ] },
-		{ sideGroups: [ (real) ] },
-		{ sideGroups: [ (real) ] },
+	tileId: (real),
+	sides: [
+		{ 
+			sideGroups: [ (real) ],
+			neighbours: [ (real) ],
+		},
+		{ 
+			sideGroups: [ (real) ],
+			neighbours: [ (real) ],
+		},
+		{ 
+			sideGroups: [ (real) ],
+			neighbours: [ (real) ],
+		},
+		{ 
+			sideGroups: [ (real) ],
+			neighbours: [ (real) ],
+		},
 	]
 }
 
 
 tile: {
-	sideGroups: [ (real) ],
-	neighbours: [
-		{ sideGroups: [ (real) ] },
-		{ sideGroups: [ (real) ] },
-		{ sideGroups: [ (real) ] },
-		{ sideGroups: [ (real) ] },
+	tileId: (real),
+	sides: [
+		{ 
+			sideGroups: [ (real) ],
+			neighbours: [ (real) ],
+		},
+		{ 
+			sideGroups: [ (real) ],
+			neighbours: [ (real) ],
+		},
+		{ 
+			sideGroups: [ (real) ],
+			neighbours: [ (real) ],
+		},
+		{ 
+			sideGroups: [ (real) ],
+			neighbours: [ (real) ],
+		},
 	]
 }

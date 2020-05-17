@@ -1,1 +1,1 @@
-ds_map_destroy(raw_tile);
+ds_map_destroy(dummy_tile);
