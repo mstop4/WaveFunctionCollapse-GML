@@ -63,6 +63,22 @@
             }
         },
         {
+            "Key": "1ed6c3ed-4a28-45c9-b76e-c3313cfac985",
+            "Value": {
+                "id": "0863d520-1175-4c6b-a7d1-65360d8e2d50",
+                "resourcePath": "scripts\/init_symmetries\/init_symmetries.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2ba8fb4f-1fe0-404a-9247-48bd3303bc9e",
+            "Value": {
+                "id": "6ba41d31-fac1-4149-ac5f-eb49b01e0555",
+                "resourcePath": "scripts\/tile_neighbours_flip\/tile_neighbours_flip.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "33cfe8bc-80a5-479c-bf34-e4ed1e303b55",
             "Value": {
                 "id": "2a0d73b5-5ef2-41cb-945a-158545101c33",
@@ -87,11 +103,27 @@
             }
         },
         {
+            "Key": "63faa297-1e76-4889-adb5-284551b8b055",
+            "Value": {
+                "id": "d43a35fb-8981-48df-8ec1-f08705529ce2",
+                "resourcePath": "scripts\/tile_neighbours_rotate\/tile_neighbours_rotate.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "9f0e7a29-1023-4363-87be-d6e23c0d4aff",
                 "resourcePath": "options\/html5\/options_html5.yy",
                 "resourceType": "GMHtml5Options"
+            }
+        },
+        {
+            "Key": "78c36e44-9fb1-4f33-a606-c17a86d87185",
+            "Value": {
+                "id": "2c379b6c-8d41-4116-ab6a-6f022cbbd7f8",
+                "resourcePath": "scripts\/create_test_tiles\/create_test_tiles.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -106,7 +138,7 @@
             "Key": "8fca7542-39ed-484d-b067-4a9365976f82",
             "Value": {
                 "id": "aa9e73b0-19d5-425a-9e4d-bc9a5add965d",
-                "resourcePath": "sprites\\spr_symmetry_test\\spr_symmetry_test.yy",
+                "resourcePath": "sprites\/spr_symmetry_test\/spr_symmetry_test.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -218,7 +250,7 @@
             "Key": "d1548788-9d1e-4d48-8c9a-dab0d563d69a",
             "Value": {
                 "id": "d97f5fb4-cf10-480f-97de-2ce174c7e276",
-                "resourcePath": "tilesets\\ts_symmetry\\ts_symmetry.yy",
+                "resourcePath": "tilesets\/ts_symmetry\/ts_symmetry.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -228,6 +260,14 @@
                 "id": "ecb84129-50b9-468a-a78f-bc4d7a89cf1b",
                 "resourcePath": "rooms\/room0\/room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d4df14c8-d04f-4369-b11f-9e9548d254d1",
+            "Value": {
+                "id": "e7f6e0c0-12b2-49d4-82b5-a60b77aa9e52",
+                "resourcePath": "notes\/symmetries.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -244,6 +284,14 @@
                 "id": "6d076d23-f98b-4e7e-a570-ac57f6f3f8ec",
                 "resourcePath": "tilesets\/ts_test\/ts_test.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "ded9ae06-dd6a-4dfd-9aae-1960e146ba16",
+            "Value": {
+                "id": "b1f7f1bc-4daf-435b-b566-c17a1d529954",
+                "resourcePath": "scripts\/tile_neighbours_mirror\/tile_neighbours_mirror.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -280,7 +328,12 @@
         }
     ],
     "script_order": [
-        "ca9f85e0-eff0-4d2f-b7a3-0e628fb7e9d4"
+        "ca9f85e0-eff0-4d2f-b7a3-0e628fb7e9d4",
+        "1ed6c3ed-4a28-45c9-b76e-c3313cfac985",
+        "63faa297-1e76-4889-adb5-284551b8b055",
+        "2ba8fb4f-1fe0-404a-9247-48bd3303bc9e",
+        "ded9ae06-dd6a-4dfd-9aae-1960e146ba16",
+        "78c36e44-9fb1-4f33-a606-c17a86d87185"
     ],
     "tutorial": ""
 }

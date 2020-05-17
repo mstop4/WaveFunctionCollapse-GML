@@ -3,6 +3,13 @@ enum SYMMETRY {
 	T,
 	I,
 	L,
-	D,
-	O,
+	Z,
+	R
+}
+
+enum SIDE {
+	TOP,
+	LEFT,
+	BOTTOM,
+	RIGHT
 }

@@ -1,0 +1,40 @@
+Transforms
+
+0 - none
+1 - rotate
+2 - flip (v)
+3 - flip, rotate
+4 - mirror (h)
+5 - mirror, rotate
+6 - mirror, flip
+7 - mirror, flip, rotate
+
+Sides
+
+0 - top
+1 - left
+2 - bottom
+3 - right
+
+
+rawTile: {
+	sideGroups: [ (real) ],
+	symmetry: (SYMMETRY),
+	neighbours: [
+		{ sideGroups: [ (real) ] },
+		{ sideGroups: [ (real) ] },
+		{ sideGroups: [ (real) ] },
+		{ sideGroups: [ (real) ] },
+	]
+}
+
+
+tile: {
+	sideGroups: [ (real) ],
+	neighbours: [
+		{ sideGroups: [ (real) ] },
+		{ sideGroups: [ (real) ] },
+		{ sideGroups: [ (real) ] },
+		{ sideGroups: [ (real) ] },
+	]
+}
