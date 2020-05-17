@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "8fca7542-39ed-484d-b067-4a9365976f82",
+            "Value": {
+                "id": "aa9e73b0-19d5-425a-9e4d-bc9a5add965d",
+                "resourcePath": "sprites\\spr_symmetry_test\\spr_symmetry_test.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "93566aad-c3b3-48a9-8fa7-9c5ee19f74ac",
             "Value": {
                 "id": "01693178-d309-4f18-97c3-68aa2e2adaae",
@@ -204,6 +212,14 @@
                 "id": "4384dabc-a4a8-44bf-8cc3-0294562c4a69",
                 "resourcePath": "views\/d08ec1dc-eab8-4e6e-a03f-17d0b0ddf589.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d1548788-9d1e-4d48-8c9a-dab0d563d69a",
+            "Value": {
+                "id": "d97f5fb4-cf10-480f-97de-2ce174c7e276",
+                "resourcePath": "tilesets\\ts_symmetry\\ts_symmetry.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
