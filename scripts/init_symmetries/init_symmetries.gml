@@ -13,15 +13,3 @@ symmetry_data[SYMMETRY.I] = [0, 1, 0, 1, 0, 1, 0, 1];
 symmetry_data[SYMMETRY.L] = [0, 1, 1, 2, 3, 0, 2, 3];
 symmetry_data[SYMMETRY.Z] = [0, 1, 1, 0, 1, 0, 0, 1];
 symmetry_data[SYMMETRY.R] = [0, 1, 2, 3, 4, 5, 6, 7];
-
-// 0 - top
-// 1 - left
-// 2 - bottom
-// 3 - right
-
-// side_data[SYMMETRY.X] = [0, 0, 0, 0];
-// side_data[SYMMETRY.T] = [0, 1, 2, 1];
-// side_data[SYMMETRY.I] = [0, 1, 0, 1];
-// side_data[SYMMETRY.L] = [0, 1, 1, 0];
-// side_data[SYMMETRY.Z] = [0, 1, 2, 3];
-// side_data[SYMMETRY.R] = [0, 1, 2, 3];

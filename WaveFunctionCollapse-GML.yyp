@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1e100037-3322-4c51-b34a-844769a78f05",
+            "Value": {
+                "id": "21a2cfbb-69cf-44e1-b64e-f82ce40f4efb",
+                "resourcePath": "scripts\/generate_tile_data\/generate_tile_data.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1ed6c3ed-4a28-45c9-b76e-c3313cfac985",
             "Value": {
                 "id": "0863d520-1175-4c6b-a7d1-65360d8e2d50",
@@ -314,7 +322,7 @@
             "Key": "f262aca3-cfc6-4d30-b559-0291977cb9f3",
             "Value": {
                 "id": "48df7545-5ef7-43d4-9128-8d2f804f33ef",
-                "resourcePath": "datafiles_yy\\test.json.yy",
+                "resourcePath": "datafiles_yy\/test.json.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -330,7 +338,7 @@
             "Key": "f9a6d14f-21c6-40a3-8e60-577c1a34ec7d",
             "Value": {
                 "id": "9ded0f1a-fba9-4c68-b84e-324587a2ce96",
-                "resourcePath": "scripts\\load_dummy_json\\load_dummy_json.yy",
+                "resourcePath": "scripts\/load_dummy_json\/load_dummy_json.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -346,7 +354,7 @@
             "Key": "fdb744f8-4b3f-4266-b12e-22da441a3e11",
             "Value": {
                 "id": "844bc8b7-f4c5-48ff-99a6-46c07fdbec43",
-                "resourcePath": "scripts\\load_tile_json\\load_tile_json.yy",
+                "resourcePath": "scripts\/load_tile_json\/load_tile_json.yy",
                 "resourceType": "GMScript"
             }
         }
@@ -359,7 +367,8 @@
         "ded9ae06-dd6a-4dfd-9aae-1960e146ba16",
         "78c36e44-9fb1-4f33-a606-c17a86d87185",
         "f9a6d14f-21c6-40a3-8e60-577c1a34ec7d",
-        "fdb744f8-4b3f-4266-b12e-22da441a3e11"
+        "fdb744f8-4b3f-4266-b12e-22da441a3e11",
+        "1e100037-3322-4c51-b34a-844769a78f05"
     ],
     "tutorial": ""
 }

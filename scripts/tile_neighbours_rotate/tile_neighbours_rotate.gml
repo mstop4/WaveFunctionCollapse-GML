@@ -1,12 +1,15 @@
-// @arg neighbours
+// @arg sides
 // Rotate tile neighbours 90 degrees clockwise
 
-var _neighbours = argument[0];
-var _new_neighbours = ds_list_create();
+var _sides = argument[0];
+var _new_sides = [
+	_sides[| SIDE.LEFT],
+	_sides[| SIDE.BOTTOM],
+	_sides[| SIDE.RIGHT],
+	_sides[| SIDE.TOP]
+];
 
-_new_neighbours[| SIDE.TOP] = _neighbours[| SIDE.LEFT];
-_new_neighbours[| SIDE.LEFT] = _neighbours[| SIDE.BOTTOM];
-_new_neighbours[| SIDE.BOTTOM] = _neighbours[| SIDE.RIGHT];
-_new_neighbours[| SIDE.RIGHT] = _neighbours[| SIDE.TOP];
-
-return _new_neighbours;
+for (var i=0; i<SIDE.RIGHT+1; i++) {
+	_sides[| i] = _new_sides[i];
+	ds_list_mark_as_map(_sides, i);
+}

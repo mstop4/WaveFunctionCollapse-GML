@@ -7,5 +7,7 @@ init_symmetries();
 // var _dummy_json = json_encode(dummy_tile);
 // show_debug_message(_dummy_json);
 
-tile_data = load_tile_json("test.json");
-show_debug_message(json_encode(tile_data));
+raw_tile_data = load_tile_json("test.json");
+show_debug_message(json_encode(raw_tile_data));
+
+tile_data = generate_tile_data(raw_tile_data);
