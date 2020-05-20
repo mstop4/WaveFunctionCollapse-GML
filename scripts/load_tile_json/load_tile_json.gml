@@ -1,3 +1,4 @@
+/// @arg filename
 var _filename = argument[0];
 
 var _file = file_text_open_read(_filename);

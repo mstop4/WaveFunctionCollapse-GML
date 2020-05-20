@@ -1,4 +1,4 @@
-// @arg sides
+/// @arg sides
 // Mirror tile neighbours horizontally
 
 var _sides = argument[0];

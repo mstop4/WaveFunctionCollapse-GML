@@ -1,6 +1,3 @@
-width_tiles = room_width div 32;
-height_tiles = room_height div 32;
-
 test_layer = layer_create(0);
 test_tilemap = layer_tilemap_create(test_layer, 0, 0, ts_test, width_tiles, height_tiles);
 

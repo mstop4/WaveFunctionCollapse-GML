@@ -1,4 +1,4 @@
-// @arg sides
+/// @arg sides
 // Flip tile neighbours vertically
 
 var _sides = argument[0];

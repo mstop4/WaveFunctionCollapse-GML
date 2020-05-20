@@ -1,4 +1,4 @@
-// @arg sides
+/// @arg sides
 // Rotate tile neighbours 90 degrees clockwise
 
 var _sides = argument[0];

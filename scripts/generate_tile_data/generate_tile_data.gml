@@ -1,4 +1,4 @@
-// @arg raw_tile_data
+/// @arg raw_tile_data
 
 var _raw_tile_data = argument[0];
 var _final_tile_data = ds_map_create();
