@@ -28,6 +28,7 @@ for (var i=0; i<_len; i++) {
 		} else {
 			var _new_tile = ds_map_create();
 			_new_tile[? "tileId"] = _tile_id;
+			_new_tile[? "transforms"] = j;
 			var _new_sides = ds_list_create();
 			ds_list_copy(_new_sides, _sides);
 			

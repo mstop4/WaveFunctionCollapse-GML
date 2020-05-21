@@ -43,6 +43,7 @@ rawTile: {
 
 tile: {
 	tileId: (real),
+	transforms: (real),
 	sides: [
 		{ 
 			sideGroups: [ (real) ],
