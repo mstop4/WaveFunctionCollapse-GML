@@ -31,4 +31,12 @@ for (var i=0; i<width_tiles; i++) {
 	}
 }
 
-wfc_step();
+var _done = false;
+var _start_time = current_time;
+
+while (!_done) {
+	_done = wfc_begin_step();
+	wfc_end_step();
+}
+
+show_debug_message("Time taken: " + string((current_time - _start_time) / 1000) + " s");

@@ -1,9 +1,3 @@
-// Collapse cell with the least entropy
-var _cell = get_cell_least_entropy(wave_grid);
-collapse_cell(wave_grid[# _cell[0], _cell[1]]);
-copy_grid(wave_grid, wave_grid_copy);
-
-
 // Assign tiles to cells that have fully collapsed
 var _tile_data = tile_data[? "tiles"];
 

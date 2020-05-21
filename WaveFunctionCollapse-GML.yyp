@@ -146,7 +146,7 @@
             "Key": "79e84f7d-9871-460d-8f19-35cd44c31ced",
             "Value": {
                 "id": "c73d186f-e3d6-48e5-81be-3f893c8c9552",
-                "resourcePath": "scripts\/wfc_step\/wfc_step.yy",
+                "resourcePath": "scripts\/wfc_begin_step\/wfc_begin_step.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -252,6 +252,14 @@
                 "id": "3eecf54d-34a7-4b18-ab32-afe02a890642",
                 "resourcePath": "views\/c1fa40e7-58f8-4a2f-959d-63a4228eb914.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c404365a-20f9-4a49-850f-a42b666a602c",
+            "Value": {
+                "id": "a99e9944-8699-40dd-8163-b95b61a04c1b",
+                "resourcePath": "scripts\/wfc_propagate\/wfc_propagate.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -407,6 +415,14 @@
             }
         },
         {
+            "Key": "faa23ee3-a936-4560-9934-b47f055a44c8",
+            "Value": {
+                "id": "87a70f7e-2554-479d-a3c2-89fa88ec5572",
+                "resourcePath": "scripts\/wfc_end_step\/wfc_end_step.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fc86ec2a-5797-4f3a-8748-eada030328c6",
             "Value": {
                 "id": "2980c40a-2a88-4bac-b061-e3fd79cc018d",
@@ -435,6 +451,8 @@
         "905c2b11-74df-4875-a969-30f6086f6131",
         "059ed920-fd0e-4360-a499-43d990748d7d",
         "79e84f7d-9871-460d-8f19-35cd44c31ced",
+        "c404365a-20f9-4a49-850f-a42b666a602c",
+        "faa23ee3-a936-4560-9934-b47f055a44c8",
         "78c36e44-9fb1-4f33-a606-c17a86d87185",
         "f9a6d14f-21c6-40a3-8e60-577c1a34ec7d"
     ],
