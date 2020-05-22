@@ -1,6 +1,8 @@
 /// @arg raw_tile_data
+/// @arg include_dupes
 
 var _raw_tile_data = argument[0];
+var _include_dupes = argument[1];
 var _final_tile_data = ds_map_create();
 
 var _tiles = _raw_tile_data[? "tiles"];
@@ -24,7 +26,9 @@ for (var i=0; i<_len; i++) {
 
 		// Check tile cache
 		if (_cur_config_index < ds_list_size(_tile_configs)) {
-			ds_list_add(_final_tiles, _tile_configs[| _cur_config_index]);
+			if (_include_dupes) {
+				ds_list_add(_final_tiles, _tile_configs[| _cur_config_index]);
+			}
 		} else {
 			var _new_tile = ds_map_create();
 			_new_tile[? "tileId"] = _tile_id;

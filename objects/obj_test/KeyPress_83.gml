@@ -1,6 +1,8 @@
 if (state == WFC_STATE.IDLE) {
 	var _start_time = current_time;
 	var _wave_num = 0;
+	
+	wfc_reset();
 
 	while (true) {
 		_wave_num++;

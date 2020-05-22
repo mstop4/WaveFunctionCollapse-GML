@@ -1,6 +1,6 @@
 {
-  "tiles": [   
-    {
+  "tiles": [
+      {
       "symmetry": "T",
       "tileId": 2,
       "sides": [
@@ -22,7 +22,7 @@
         }
       ]
     },
-
+  
     {
       "symmetry": "I",
       "tileId": 3,
@@ -42,29 +42,6 @@
         { 
           "sideGroups": [ 0 ],
           "neighbours": [ 0 ]
-        }
-      ]
-    },
-    
-      {
-      "symmetry": "L",
-      "tileId": 4,
-      "sides": [
-        { 
-          "sideGroups": [ 1 ],
-          "neighbours": [ 1 ]
-        },
-        { 
-          "sideGroups": [ 0 ],
-          "neighbours": [ 0 ]
-        },
-        { 
-          "sideGroups": [ 0 ],
-          "neighbours": [ 0 ]
-        },
-        { 
-          "sideGroups": [ 1 ],
-          "neighbours": [ 1 ]
         }
       ]
     }
