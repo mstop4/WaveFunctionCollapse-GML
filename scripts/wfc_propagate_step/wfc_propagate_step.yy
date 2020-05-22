@@ -1,8 +1,8 @@
 {
-    "id": "905c2b11-74df-4875-a969-30f6086f6131",
+    "id": "c404365a-20f9-4a49-850f-a42b666a602c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "get_cell_least_entropy",
+    "name": "wfc_propagate_step",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,8 +1,8 @@
 {
-    "id": "c404365a-20f9-4a49-850f-a42b666a602c",
+    "id": "a853a89d-5f7a-4a42-91de-8855792c0059",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "wfc_propagate",
+    "name": "wfc_collapse_cell",
     "IsCompatibility": false,
     "IsDnD": false
 }

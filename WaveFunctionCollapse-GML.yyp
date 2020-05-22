@@ -82,7 +82,7 @@
             "Key": "1ed6c3ed-4a28-45c9-b76e-c3313cfac985",
             "Value": {
                 "id": "0863d520-1175-4c6b-a7d1-65360d8e2d50",
-                "resourcePath": "scripts\/init_symmetries\/init_symmetries.yy",
+                "resourcePath": "scripts\\init_data\\init_data.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -91,6 +91,14 @@
             "Value": {
                 "id": "6ba41d31-fac1-4149-ac5f-eb49b01e0555",
                 "resourcePath": "scripts\/tile_neighbours_flip\/tile_neighbours_flip.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2eb1560f-6456-4152-a502-6ecd0a2a6ec4",
+            "Value": {
+                "id": "13983c23-ac54-4784-bc91-8f468e2a21b8",
+                "resourcePath": "scripts\\wfc_push_neighbours\\wfc_push_neighbours.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -178,7 +186,7 @@
             "Key": "905c2b11-74df-4875-a969-30f6086f6131",
             "Value": {
                 "id": "22ed5a76-0c66-4a29-97fa-0c6bd7bc908e",
-                "resourcePath": "scripts\/get_cell_least_entropy\/get_cell_least_entropy.yy",
+                "resourcePath": "scripts\\wfc_get_cell_least_entropy\\wfc_get_cell_least_entropy.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -202,7 +210,7 @@
             "Key": "a853a89d-5f7a-4a42-91de-8855792c0059",
             "Value": {
                 "id": "edb1045a-2ca6-4e51-9c4d-7da5eef7e3e4",
-                "resourcePath": "scripts\/collapse_cell\/collapse_cell.yy",
+                "resourcePath": "scripts\\wfc_collapse_cell\\wfc_collapse_cell.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -258,7 +266,7 @@
             "Key": "c404365a-20f9-4a49-850f-a42b666a602c",
             "Value": {
                 "id": "a99e9944-8699-40dd-8163-b95b61a04c1b",
-                "resourcePath": "scripts\/wfc_propagate\/wfc_propagate.yy",
+                "resourcePath": "scripts\\wfc_propagate_step\\wfc_propagate_step.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -383,6 +391,14 @@
             }
         },
         {
+            "Key": "f05ac5ee-a248-47dc-9dfd-d33072a14c64",
+            "Value": {
+                "id": "76485417-1361-4f0c-b424-1c1c65e07b77",
+                "resourcePath": "scripts\\wfc_check_neighbour\\wfc_check_neighbour.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0925854-f404-404f-b7c3-d961699f0347",
             "Value": {
                 "id": "48c260fd-171c-401c-8398-7d207d8672e7",
@@ -452,6 +468,8 @@
         "059ed920-fd0e-4360-a499-43d990748d7d",
         "79e84f7d-9871-460d-8f19-35cd44c31ced",
         "c404365a-20f9-4a49-850f-a42b666a602c",
+        "f05ac5ee-a248-47dc-9dfd-d33072a14c64",
+        "2eb1560f-6456-4152-a502-6ecd0a2a6ec4",
         "faa23ee3-a936-4560-9934-b47f055a44c8",
         "78c36e44-9fb1-4f33-a606-c17a86d87185",
         "f9a6d14f-21c6-40a3-8e60-577c1a34ec7d"

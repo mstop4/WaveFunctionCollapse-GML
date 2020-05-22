@@ -3,7 +3,7 @@ var _tile_data = tile_data[? "tiles"];
 
 for (var i=0; i<width_tiles; i++) {
 	for (var j=0; j<height_tiles; j++) {
-		if (!done_grid[# i, j]) {
+		if (done_grid[# i, j] != CELL_STATE.TILED) {
 			var _len = ds_list_size(wave_grid[# i, j]);
 		
 			if (_len <= 1) {
@@ -21,7 +21,7 @@ for (var i=0; i<width_tiles; i++) {
 					_data = tile_set_mirror(_data, _transforms & 4);
 					tilemap_set(wfc_tilemap, _data, i, j);
 				}
-				done_grid[# i, j] = true;
+				done_grid[# i, j] = CELL_STATE.TILED;
 			}
 		}
 	}

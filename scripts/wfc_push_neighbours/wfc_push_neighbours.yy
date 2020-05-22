@@ -1,8 +1,8 @@
 {
-    "id": "1ed6c3ed-4a28-45c9-b76e-c3313cfac985",
+    "id": "2eb1560f-6456-4152-a502-6ecd0a2a6ec4",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "init_symmetries",
+    "name": "wfc_push_neighbours",
     "IsCompatibility": false,
     "IsDnD": false
 }

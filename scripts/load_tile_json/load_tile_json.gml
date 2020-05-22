@@ -16,31 +16,7 @@ var _len = ds_list_size(_tiles);
 
 for (var i=0; i<_len; i++) {
 	var _tile = _tiles[| i];
-	switch (_tile[? "symmetry"]) {
-		case "X":
-			_tile[? "symmetry"] = SYMMETRY.X;
-			break;
-
-		case "T":
-			_tile[? "symmetry"] = SYMMETRY.T;
-			break;
-			
-		case "I":
-			_tile[? "symmetry"] = SYMMETRY.I;
-			break;
-			
-		case "L":
-			_tile[? "symmetry"] = SYMMETRY.L;
-			break;
-			
-		case "Z":
-			_tile[? "symmetry"] = SYMMETRY.Z;
-			break;
-			
-		case "R":
-			_tile[? "symmetry"] = SYMMETRY.R;
-			break;
-	}
+	_tile[? "symmetry"] = ds_map_find_value(symmetry_map, _tile[? "symmetry"]);
 }
 
 return _tile_data;

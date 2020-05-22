@@ -4,12 +4,30 @@ enum SYMMETRY {
 	I,
 	L,
 	Z,
-	R
+	R,
+	MAX
 }
 
 enum SIDE {
 	TOP,
 	LEFT,
 	BOTTOM,
-	RIGHT
+	RIGHT,
+	MAX
+}
+
+enum CELL_STATE {
+	UNCHECKED,
+	IN_STACK,
+	CHECKED,
+	TILED,
+	MAX
+}
+
+enum WFC_STATE {
+	IDLE,
+	BEGIN_STEP,
+	PROPAGATION,
+	END_STEP,
+	MAX
 }

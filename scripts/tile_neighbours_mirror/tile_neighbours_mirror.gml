@@ -9,7 +9,7 @@ var _new_sides = [
 	_sides[| SIDE.LEFT]
 ];
 
-for (var i=0; i<SIDE.RIGHT+1; i++) {
+for (var i=0; i<SIDE.MAX; i++) {
 	_sides[| i] = _new_sides[i];
 	ds_list_mark_as_map(_sides, i);
 }
