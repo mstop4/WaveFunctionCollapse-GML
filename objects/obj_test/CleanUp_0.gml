@@ -15,3 +15,5 @@ ds_map_destroy(tile_data);
 
 ds_stack_destroy(tile_stack_x);
 ds_stack_destroy(tile_stack_y);
+
+layer_destroy(wfc_layer);
