@@ -5,6 +5,8 @@ enum SYMMETRY {
 	L,
 	Z,
 	R,
+	M,
+	E,
 	MAX
 }
 

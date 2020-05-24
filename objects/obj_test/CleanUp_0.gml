@@ -1,8 +1,8 @@
 ds_map_destroy(symmetry_map);
 ds_list_destroy(exclusion_list);
 
-for (var i=0; i<width_tiles; i++) {
-	for (var j=0; j<height_tiles; j++) {
+for (var i=0; i<grid_width; i++) {
+	for (var j=0; j<grid_height; j++) {
 		ds_list_destroy(wave_grid[# i, j]);
 	}
 }

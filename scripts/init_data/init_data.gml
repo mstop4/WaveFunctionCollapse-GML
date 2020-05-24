@@ -13,6 +13,8 @@ symmetry_data[SYMMETRY.I] = [0, 1, 0, 1, 0, 1, 0, 1];
 symmetry_data[SYMMETRY.L] = [0, 1, 1, 2, 3, 0, 2, 3];
 symmetry_data[SYMMETRY.Z] = [0, 1, 1, 0, 1, 0, 0, 1];
 symmetry_data[SYMMETRY.R] = [0, 1, 2, 3, 4, 5, 6, 7];
+symmetry_data[SYMMETRY.M] = [0, 0, 0, 0, 1, 1, 1, 1];
+symmetry_data[SYMMETRY.E] = [0, 0, 1, 1, 0, 0, 1, 1];
 
 symmetry_map = ds_map_create();
 symmetry_map[? "X"] = SYMMETRY.X;
@@ -21,6 +23,8 @@ symmetry_map[? "I"] = SYMMETRY.I;
 symmetry_map[? "L"] = SYMMETRY.L;
 symmetry_map[? "Z"] = SYMMETRY.Z;
 symmetry_map[? "R"] = SYMMETRY.R;
+symmetry_map[? "M"] = SYMMETRY.M;
+symmetry_map[? "E"] = SYMMETRY.E;
 
 neighbour_offsets[SIDE.TOP] = [0, -1];
 neighbour_offsets[SIDE.LEFT] = [-1, 0];

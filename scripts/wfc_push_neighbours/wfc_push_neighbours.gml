@@ -11,7 +11,7 @@ for (var i=-1; i<2; i+=2) {
 	var _new_y = _cell_y + i;
 		
 	// Ignore out of bounds neighbours
-	if (_new_x < 0 || _new_x >= width_tiles || _new_y < 0 || _new_y >= height_tiles)
+	if (_new_x < 0 || _new_x >= grid_width || _new_y < 0 || _new_y >= grid_height)
 		continue;
 			
 	// Ignore neighbours that aren't idle
@@ -29,7 +29,7 @@ for (var i=-1; i<2; i+=2) {
 	var _new_y = _cell_y;
 		
 	// Ignore out of bounds neighbours
-	if (_new_x < 0 || _new_x >= width_tiles || _new_y < 0 || _new_y >= height_tiles)
+	if (_new_x < 0 || _new_x >= grid_width || _new_y < 0 || _new_y >= grid_height)
 		continue;
 			
 	// Ignore neighbours that aren't idle

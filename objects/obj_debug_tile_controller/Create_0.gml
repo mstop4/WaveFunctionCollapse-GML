@@ -1,8 +1,8 @@
 init_enums();
 init_data();
 
-width_tiles = 30;
-height_tiles = 24;
+grid_width = 30;
+grid_height = 24;
 draw_mode = 0;
 
 exclusion_list = ds_list_create();
@@ -11,7 +11,7 @@ raw_tile_data = load_tile_json(tile_data_json);
 tile_data = generate_tile_data(raw_tile_data, false);
 
 debug_layer = layer_create(0);
-debug_tilemap = layer_tilemap_create(debug_layer, 0, 0, tileset_index, width_tiles, height_tiles);
+debug_tilemap = layer_tilemap_create(debug_layer, 0, 0, tileset_index, grid_width, grid_height);
 
 var _tile_data = tile_data[? "tiles"];
 var _len = ds_list_size(_tile_data);
