@@ -6,7 +6,7 @@ var _least_coords_list = ds_list_create();
 
 for (var i=0; i<width_tiles; i++) {
 	for (var j=0; j<height_tiles; j++) {
-		if (!done_grid[# i, j]) {
+		if (done_grid[# i, j] == CELL_STATE.IDLE) {
 			var _len = ds_list_size(_wave_grid[# i, j]);
 			if (_len <= _least_amount) {
 				if (_len < _least_amount) {

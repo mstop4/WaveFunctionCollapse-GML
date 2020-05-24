@@ -1,6 +1,6 @@
 tilemap_clear(wfc_tilemap, 0);
-ds_grid_clear(done_grid, CELL_STATE.UNCHECKED);
-ds_grid_clear(checked_grid, CELL_STATE.UNCHECKED);
+ds_grid_clear(done_grid, CELL_STATE.IDLE);
+ds_grid_clear(checked_grid, CELL_STATE.IDLE);
 
 ds_queue_clear(done_queue_x);
 ds_queue_clear(done_queue_y);

@@ -130,9 +130,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "32",
+            "value": "40",
             "varName": "width_tiles",
-            "varType": 4
+            "varType": 1
         },
         {
             "id": "e2cf1bdc-d580-4047-945f-f4bc65c9c884",
@@ -144,9 +144,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "24",
+            "value": "22",
             "varName": "height_tiles",
-            "varType": 4
+            "varType": 1
         },
         {
             "id": "241d6e9f-a94c-4ad1-af49-721fcf304c40",

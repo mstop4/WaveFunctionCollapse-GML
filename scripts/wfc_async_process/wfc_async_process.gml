@@ -1,7 +1,10 @@
 switch (state) {
 	case WFC_STATE.BEGIN_STEP:
 		wave_num++;
-		//show_debug_message("Wave " + string(wave_num));
+		if (wave_num == 586) {
+			show_debug_message("stop");
+		}
+		show_debug_message("Wave " + string(wave_num));
 		propagation_done = false;
 
 		var _wfc_done = wfc_begin_step();
@@ -12,6 +15,7 @@ switch (state) {
 			break;
 		}
 		state = WFC_STATE.PROPAGATION;
+		grid_changed = false;
 	break;
 		
 	case WFC_STATE.PROPAGATION:
@@ -28,13 +32,13 @@ switch (state) {
 			state = WFC_STATE.IDLE;
 			show_message_async("Something went wrong");
 			return true;
-		}
-		else if (!grid_changed) {
+		} else if (!grid_changed) {
 			state = WFC_STATE.BEGIN_STEP;
 			return true;
 		} else {
 			state = WFC_STATE.PROPAGATION;
 			grid_changed = false;
+
 			// Done cells don't need to be checked
 			ds_grid_copy(checked_grid, done_grid);
 		}

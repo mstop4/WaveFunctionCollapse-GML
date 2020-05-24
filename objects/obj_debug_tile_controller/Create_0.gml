@@ -30,18 +30,13 @@ for (var i=0; i<_len; i++) {
 	
 	for (var j=0; j<4; j++) {
 		var _cur_side = _sides[| j];
-		var _side_groups = _cur_side[? "sideGroups"];
+		var _side_group = _cur_side[? "sideGroup"];
 		var _neighbours = _cur_side[? "neighbours"];
 		
-		var _side_groups_len = ds_list_size(_side_groups);
 		var _neighbours_len = ds_list_size(_neighbours);
 		
-		_d_tile.side_groups[j] = "";
+		_d_tile.side_groups[j] = string(_side_group);
 		_d_tile.neighbours[j] = "";
-		
-		for (var k=0; k<_side_groups_len; k++) {
-			_d_tile.side_groups[j] += string(_side_groups[| k]) + ", ";
-		}
 		
 		for (var k=0; k<_neighbours_len; k++) {
 			_d_tile.neighbours[j] = string(_neighbours[| k]) + ", ";
@@ -49,7 +44,7 @@ for (var i=0; i<_len; i++) {
 	}
 	
 	_xx++;
-	if (_xx > 8) {
+	if (_xx > 7) {
 		_xx = 0;
 		_yy++;
 	}

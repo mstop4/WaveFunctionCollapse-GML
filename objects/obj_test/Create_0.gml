@@ -4,7 +4,7 @@ init_data();
 // Settings
 exclusion_list = ds_list_create();
 async_mode = false;
-ds_list_add(exclusion_list, 6);
+ds_list_add(exclusion_list, 1, 6);
 
 // Working vars
 state = WFC_STATE.IDLE;

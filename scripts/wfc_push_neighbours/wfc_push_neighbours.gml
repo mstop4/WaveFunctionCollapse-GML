@@ -14,8 +14,8 @@ for (var i=-1; i<2; i+=2) {
 	if (_new_x < 0 || _new_x >= width_tiles || _new_y < 0 || _new_y >= height_tiles)
 		continue;
 			
-	// Ignore neighbours that have already been checked or pushed to the stack
-	if (checked_grid[# _new_x, _new_y] != CELL_STATE.UNCHECKED) 
+	// Ignore neighbours that aren't idle
+	if (checked_grid[# _new_x, _new_y] != CELL_STATE.IDLE) 
 		continue;
 
 	ds_stack_push(tile_stack_x, _new_x);
@@ -32,8 +32,8 @@ for (var i=-1; i<2; i+=2) {
 	if (_new_x < 0 || _new_x >= width_tiles || _new_y < 0 || _new_y >= height_tiles)
 		continue;
 			
-	// Ignore neighbours that have already been checked or pushed to the stack
-	if (checked_grid[# _new_x, _new_y] != CELL_STATE.UNCHECKED) 
+	// Ignore neighbours that aren't idle
+	if (checked_grid[# _new_x, _new_y] != CELL_STATE.IDLE)
 		continue;
 
 	ds_stack_push(tile_stack_x, _new_x);
