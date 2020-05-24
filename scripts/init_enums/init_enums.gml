@@ -5,6 +5,8 @@ enum SYMMETRY {
 	L,
 	Z,
 	R,
+	M,
+	E,
 	MAX
 }
 
@@ -17,9 +19,9 @@ enum SIDE {
 }
 
 enum CELL_STATE {
-	UNCHECKED,
+	IDLE,
 	IN_STACK,
-	CHECKED,
+	COLLAPSED,
 	TILED,
 	MAX
 }

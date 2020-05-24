@@ -1,5 +1,5 @@
 test_layer = layer_create(0);
-test_tilemap = layer_tilemap_create(test_layer, 0, 0, ts_test, width_tiles, height_tiles);
+test_tilemap = layer_tilemap_create(test_layer, 0, 0, ts_test, grid_width, grid_height);
 
 // 0 - none
 // 1 - rotate

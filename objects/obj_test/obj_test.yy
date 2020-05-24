@@ -121,7 +121,7 @@
             "varType": 5
         },
         {
-            "id": "e94413c0-7124-488b-bca5-07899533c462",
+            "id": "f1702235-4dd0-48a6-9170-9b876720d397",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -131,8 +131,36 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "32",
-            "varName": "width_tiles",
-            "varType": 4
+            "varName": "tile_width",
+            "varType": 1
+        },
+        {
+            "id": "1e98c6b5-faf3-4d3e-8608-131b5fc30f8d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "32",
+            "varName": "tile_height",
+            "varType": 1
+        },
+        {
+            "id": "e94413c0-7124-488b-bca5-07899533c462",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "40",
+            "varName": "grid_width",
+            "varType": 1
         },
         {
             "id": "e2cf1bdc-d580-4047-945f-f4bc65c9c884",
@@ -144,9 +172,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "24",
-            "varName": "height_tiles",
-            "varType": 4
+            "value": "22",
+            "varName": "grid_height",
+            "varType": 1
         },
         {
             "id": "241d6e9f-a94c-4ad1-af49-721fcf304c40",

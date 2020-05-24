@@ -5,19 +5,19 @@
       "tileId": 2,
       "sides": [
         { 
-          "sideGroups": [ 1 ],
+          "sideGroups": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroups": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroups": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroups": 0,
           "neighbours": [ 0 ]
         }
       ]
@@ -28,19 +28,19 @@
       "tileId": 3,
       "sides": [
         { 
-          "sideGroups": [ 1 ],
+          "sideGroups": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroups": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 1 ],
+          "sideGroups": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroups": 0,
           "neighbours": [ 0 ]
         }
       ]

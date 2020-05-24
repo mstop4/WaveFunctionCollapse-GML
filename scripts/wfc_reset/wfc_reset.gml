@@ -1,6 +1,6 @@
 tilemap_clear(wfc_tilemap, 0);
-ds_grid_clear(done_grid, CELL_STATE.UNCHECKED);
-ds_grid_clear(checked_grid, CELL_STATE.UNCHECKED);
+ds_grid_clear(done_grid, CELL_STATE.IDLE);
+ds_grid_clear(checked_grid, CELL_STATE.IDLE);
 
 ds_queue_clear(done_queue_x);
 ds_queue_clear(done_queue_y);
@@ -9,8 +9,8 @@ ds_stack_clear(tile_stack_y);
 var _tiles = tile_data[? "tiles"];
 var _num_tiles = ds_list_size(_tiles);
 
-for (var i=0; i<width_tiles; i++) {
-	for (var j=0; j<height_tiles; j++) {
+for (var i=0; i<grid_width; i++) {
+	for (var j=0; j<grid_height; j++) {
 		ds_list_clear(wave_grid[# i, j]);
 
 		for (var k=0; k<_num_tiles; k++) {

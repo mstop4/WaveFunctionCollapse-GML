@@ -1,8 +1,8 @@
 init_enums();
 init_data();
 
-width_tiles = 30;
-height_tiles = 24;
+grid_width = room_width div tile_width;
+grid_height = room_height div tile_height;
 draw_mode = 0;
 
 exclusion_list = ds_list_create();
@@ -11,7 +11,7 @@ raw_tile_data = load_tile_json(tile_data_json);
 tile_data = generate_tile_data(raw_tile_data, false);
 
 debug_layer = layer_create(0);
-debug_tilemap = layer_tilemap_create(debug_layer, 0, 0, tileset_index, width_tiles, height_tiles);
+debug_tilemap = layer_tilemap_create(debug_layer, 0, 0, tileset_index, grid_width, grid_height);
 
 var _tile_data = tile_data[? "tiles"];
 var _len = ds_list_size(_tile_data);
@@ -30,18 +30,13 @@ for (var i=0; i<_len; i++) {
 	
 	for (var j=0; j<4; j++) {
 		var _cur_side = _sides[| j];
-		var _side_groups = _cur_side[? "sideGroups"];
+		var _side_group = _cur_side[? "sideGroup"];
 		var _neighbours = _cur_side[? "neighbours"];
 		
-		var _side_groups_len = ds_list_size(_side_groups);
 		var _neighbours_len = ds_list_size(_neighbours);
 		
-		_d_tile.side_groups[j] = "";
+		_d_tile.side_groups[j] = string(_side_group);
 		_d_tile.neighbours[j] = "";
-		
-		for (var k=0; k<_side_groups_len; k++) {
-			_d_tile.side_groups[j] += string(_side_groups[| k]) + ", ";
-		}
 		
 		for (var k=0; k<_neighbours_len; k++) {
 			_d_tile.neighbours[j] = string(_neighbours[| k]) + ", ";
@@ -49,7 +44,7 @@ for (var i=0; i<_len; i++) {
 	}
 	
 	_xx++;
-	if (_xx > 8) {
+	if (_xx > 4) {
 		_xx = 0;
 		_yy++;
 	}

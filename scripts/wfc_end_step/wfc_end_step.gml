@@ -24,7 +24,7 @@ while (!ds_queue_empty(done_queue_x) && !ds_queue_empty(done_queue_y)) {
 		} else if (_len == 0) {
 			show_debug_message("OOPS: No valid tile choices at " + string(_x) + ", " + string(_y));
 			var _data = tilemap_get(wfc_tilemap, _x, _y);
-			_data = tile_set_index(_data, 7);
+			_data = tile_set_index(_data, error_tile_index);
 			tilemap_set(wfc_tilemap, _data, _x, _y);
 			return false;
 		}

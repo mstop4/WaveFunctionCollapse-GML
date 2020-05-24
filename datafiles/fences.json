@@ -5,19 +5,19 @@
       "tileId": 1,
       "sides": [
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         }
       ]
@@ -28,19 +28,19 @@
       "tileId": 2,
       "sides": [
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         }
       ]
@@ -51,19 +51,19 @@
       "tileId": 3,
       "sides": [
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         }
       ]
@@ -74,42 +74,42 @@
       "tileId": 4,
       "sides": [
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         }
       ]
     },
     
     {
-      "symmetry": "X",
+      "symmetry": "I",
       "tileId": 5,
       "sides": [
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         },
         { 
-          "sideGroups": [ 1 ],
+          "sideGroup": 1,
           "neighbours": [ 1 ]
         }
       ]
@@ -120,19 +120,19 @@
       "tileId": 6,
       "sides": [
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroups": [ 0 ],
+          "sideGroup": 0,
           "neighbours": [ 0 ]
         }
       ]

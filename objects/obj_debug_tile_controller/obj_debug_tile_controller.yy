@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "fences.json",
+            "value": "tester.json",
             "varName": "tile_data_json",
             "varType": 2
         },
@@ -86,9 +86,37 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1,
-            "value": "ts_fences",
+            "value": "ts_test",
             "varName": "tileset_index",
             "varType": 5
+        },
+        {
+            "id": "0bf5d51d-cdab-4e14-8a3c-0284761e34d6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "32",
+            "varName": "tile_width",
+            "varType": 1
+        },
+        {
+            "id": "3b26a7e5-73e7-41cc-b998-4dd8bc8a6d08",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "32",
+            "varName": "tile_height",
+            "varType": 1
         }
     ],
     "solid": false,
