@@ -1,10 +1,14 @@
 /// @arg current_cell
 /// @arg neighbour_cell
 /// @arg side
+/// @arg cell_x
+/// @arg cell_y
 
 var _cur_cell = argument[0];
 var _nb_cell = argument[1];
 var _side = argument[2];
+var _cell_x = argument[3];
+var _cell_y = argument[4];
 
 var _num_cur_choices = ds_list_size(_cur_cell);
 var _num_nb_choices = ds_list_size(_nb_cell);
@@ -46,6 +50,13 @@ for (var i=0; i<_num_cur_choices; i++) {
 		grid_changed = true;
 		ds_list_delete(_cur_cell, i);
 		_num_cur_choices = ds_list_size(_cur_cell);
+
+		// If there is only one chocie left, put cell into done queue
+		if (_num_cur_choices == 1) {
+			ds_queue_enqueue(done_queue_x, _cell_x);
+			ds_queue_enqueue(done_queue_y, _cell_y);
+		}
+		
 		i--;
 	}
 }

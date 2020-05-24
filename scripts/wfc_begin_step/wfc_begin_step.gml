@@ -9,9 +9,8 @@ if (_cell[0] == -1) {
 // Collapse cell
 wfc_collapse_cell(wave_grid[# _cell[0], _cell[1]]);
 done_grid[# _cell[0], _cell[1]] = CELL_STATE.CHECKED;
-
-// Done cells don't need to be checked
-ds_grid_copy(checked_grid, done_grid);
+ds_queue_enqueue(done_queue_x, _cell[0]);
+ds_queue_enqueue(done_queue_y, _cell[1]);
 
 wfc_push_neighbours(_cell[0], _cell[1]);
 

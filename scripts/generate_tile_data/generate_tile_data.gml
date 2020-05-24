@@ -14,9 +14,6 @@ ds_map_add_list(_final_tile_data, "tiles", _final_tiles);
 for (var i=0; i<_len; i++) {
 	var _cur_tile = _tiles[| i];
 	var _tile_id = _cur_tile[? "tileId"];
-	
-	if (ds_list_find_index(exclusion_list, _tile_id) != -1) 
-		continue;
 
 	var _symmetry = _cur_tile[? "symmetry"];
 	var _sides = _cur_tile[? "sides"];

@@ -16,7 +16,7 @@ for (var i=0; i<SIDE.MAX; i++) {
 		continue;
 			
 	var _nb_cell = wave_grid[# _nb_x, _nb_y];
-	wfc_check_neighbour(_cur_cell, _nb_cell, i);
+	wfc_check_neighbour(_cur_cell, _nb_cell, i, _cur_x, _cur_y);
 }
 
 // Mark as checked for this wave

@@ -9,6 +9,8 @@ for (var i=0; i<width_tiles; i++) {
 
 ds_grid_destroy(wave_grid);
 ds_grid_destroy(done_grid);
+ds_queue_destroy(done_queue_x);
+ds_queue_destroy(done_queue_y);
 ds_grid_destroy(checked_grid);
 
 ds_map_destroy(raw_tile_data);

@@ -119,6 +119,48 @@
             "value": "ts_fences",
             "varName": "tileset_index",
             "varType": 5
+        },
+        {
+            "id": "e94413c0-7124-488b-bca5-07899533c462",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "32",
+            "varName": "width_tiles",
+            "varType": 4
+        },
+        {
+            "id": "e2cf1bdc-d580-4047-945f-f4bc65c9c884",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "24",
+            "varName": "height_tiles",
+            "varType": 4
+        },
+        {
+            "id": "241d6e9f-a94c-4ad1-af49-721fcf304c40",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "alotted_time",
+            "varType": 4
         }
     ],
     "solid": false,

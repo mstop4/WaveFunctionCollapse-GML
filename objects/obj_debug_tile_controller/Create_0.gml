@@ -6,7 +6,6 @@ height_tiles = 24;
 draw_mode = 0;
 
 exclusion_list = ds_list_create();
-ds_list_add(exclusion_list, 1, 6);
 
 raw_tile_data = load_tile_json(tile_data_json);
 tile_data = generate_tile_data(raw_tile_data, false);
