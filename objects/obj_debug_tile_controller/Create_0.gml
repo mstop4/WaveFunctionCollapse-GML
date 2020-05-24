@@ -1,8 +1,8 @@
 init_enums();
 init_data();
 
-grid_width = 30;
-grid_height = 24;
+grid_width = room_width div tile_width;
+grid_height = room_height div tile_height;
 draw_mode = 0;
 
 exclusion_list = ds_list_create();
@@ -44,7 +44,7 @@ for (var i=0; i<_len; i++) {
 	}
 	
 	_xx++;
-	if (_xx > 7) {
+	if (_xx > 4) {
 		_xx = 0;
 		_yy++;
 	}
