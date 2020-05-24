@@ -58,7 +58,7 @@
             "Key": "1561924a-5e6e-4f08-bea7-c0db0637ceb3",
             "Value": {
                 "id": "c5a82703-b6bf-4ab8-8742-8775ebeab827",
-                "resourcePath": "scripts\\wfc_reset\\wfc_reset.yy",
+                "resourcePath": "scripts\/wfc_reset\/wfc_reset.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -90,7 +90,7 @@
             "Key": "1ed6c3ed-4a28-45c9-b76e-c3313cfac985",
             "Value": {
                 "id": "0863d520-1175-4c6b-a7d1-65360d8e2d50",
-                "resourcePath": "scripts\\init_data\\init_data.yy",
+                "resourcePath": "scripts\/init_data\/init_data.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -106,7 +106,7 @@
             "Key": "2eb1560f-6456-4152-a502-6ecd0a2a6ec4",
             "Value": {
                 "id": "13983c23-ac54-4784-bc91-8f468e2a21b8",
-                "resourcePath": "scripts\\wfc_push_neighbours\\wfc_push_neighbours.yy",
+                "resourcePath": "scripts\/wfc_push_neighbours\/wfc_push_neighbours.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -114,7 +114,7 @@
             "Key": "303c7136-32aa-4935-add5-0f2eed00a726",
             "Value": {
                 "id": "60600f09-9158-416f-81b9-e528e43ee16f",
-                "resourcePath": "tilesets\\ts_fences\\ts_fences.yy",
+                "resourcePath": "tilesets\/ts_fences\/ts_fences.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -130,7 +130,7 @@
             "Key": "3a0d46f6-01b4-4bc7-a1bc-5c4119cb65af",
             "Value": {
                 "id": "11dd83a5-2751-472a-8fa6-3b4b461c51ef",
-                "resourcePath": "sprites\\spr_fences\\spr_fences.yy",
+                "resourcePath": "sprites\/spr_fences\/spr_fences.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "7096df86-a7ab-4757-820d-3eb7ffa36ea2",
+            "Value": {
+                "id": "32dd76d9-7173-4bef-942f-efe2208fd752",
+                "resourcePath": "sprites\/spr_mask\/spr_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "9f0e7a29-1023-4363-87be-d6e23c0d4aff",
@@ -170,7 +178,7 @@
             "Key": "7831144d-55c2-4066-bff0-6a3457f35302",
             "Value": {
                 "id": "b875ba3d-a9d8-485e-9de7-2995056794e1",
-                "resourcePath": "objects\\obj_debug_tile_controller\\obj_debug_tile_controller.yy",
+                "resourcePath": "objects\/obj_debug_tile_controller\/obj_debug_tile_controller.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -218,7 +226,7 @@
             "Key": "905c2b11-74df-4875-a969-30f6086f6131",
             "Value": {
                 "id": "22ed5a76-0c66-4a29-97fa-0c6bd7bc908e",
-                "resourcePath": "scripts\\wfc_get_cell_least_entropy\\wfc_get_cell_least_entropy.yy",
+                "resourcePath": "scripts\/wfc_get_cell_least_entropy\/wfc_get_cell_least_entropy.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -226,7 +234,7 @@
             "Key": "920729c3-9243-4c91-b30a-2018f3689d91",
             "Value": {
                 "id": "7d688ca4-80b0-49f8-a3e7-720697e0098b",
-                "resourcePath": "rooms\\room_debug_tiles\\room_debug_tiles.yy",
+                "resourcePath": "rooms\/room_debug_tiles\/room_debug_tiles.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -250,7 +258,7 @@
             "Key": "a853a89d-5f7a-4a42-91de-8855792c0059",
             "Value": {
                 "id": "edb1045a-2ca6-4e51-9c4d-7da5eef7e3e4",
-                "resourcePath": "scripts\\wfc_collapse_cell\\wfc_collapse_cell.yy",
+                "resourcePath": "scripts\/wfc_collapse_cell\/wfc_collapse_cell.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -306,7 +314,7 @@
             "Key": "c404365a-20f9-4a49-850f-a42b666a602c",
             "Value": {
                 "id": "a99e9944-8699-40dd-8163-b95b61a04c1b",
-                "resourcePath": "scripts\\wfc_propagate_step\\wfc_propagate_step.yy",
+                "resourcePath": "scripts\/wfc_propagate_step\/wfc_propagate_step.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -394,7 +402,7 @@
             "Key": "d6e672b6-1cc1-480f-8239-c1608f90f16c",
             "Value": {
                 "id": "e9479962-2227-449e-b375-9f1c68d9667b",
-                "resourcePath": "datafiles_yy\\fences.json.yy",
+                "resourcePath": "datafiles_yy\/fences.json.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -426,7 +434,7 @@
             "Key": "df322997-e27e-4dbe-8096-42c435da31f0",
             "Value": {
                 "id": "4fe755d2-5433-47af-8377-99edb0bc2262",
-                "resourcePath": "objects\\obj_debug_tile\\obj_debug_tile.yy",
+                "resourcePath": "objects\/obj_debug_tile\/obj_debug_tile.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -434,7 +442,7 @@
             "Key": "e045e747-0322-43e4-a049-3a3011d3df6c",
             "Value": {
                 "id": "f4da22e7-e452-4816-b514-1e14b3a12c4f",
-                "resourcePath": "datafiles_yy\\test.json.yy",
+                "resourcePath": "datafiles_yy\/test.json.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -458,7 +466,7 @@
             "Key": "f05ac5ee-a248-47dc-9dfd-d33072a14c64",
             "Value": {
                 "id": "76485417-1361-4f0c-b424-1c1c65e07b77",
-                "resourcePath": "scripts\\wfc_check_neighbour\\wfc_check_neighbour.yy",
+                "resourcePath": "scripts\/wfc_check_neighbour\/wfc_check_neighbour.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -474,7 +482,7 @@
             "Key": "f262aca3-cfc6-4d30-b559-0291977cb9f3",
             "Value": {
                 "id": "48df7545-5ef7-43d4-9128-8d2f804f33ef",
-                "resourcePath": "datafiles_yy\\test2.json.yy",
+                "resourcePath": "datafiles_yy\/test2.json.yy",
                 "resourceType": "GMIncludedFile"
             }
         },

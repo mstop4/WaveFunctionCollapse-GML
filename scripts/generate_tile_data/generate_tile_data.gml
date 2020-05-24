@@ -13,8 +13,12 @@ ds_map_add_list(_final_tile_data, "tiles", _final_tiles);
 // Generate full tile data from raw tile and symmetry data
 for (var i=0; i<_len; i++) {
 	var _cur_tile = _tiles[| i];
-	var _symmetry = _cur_tile[? "symmetry"];
 	var _tile_id = _cur_tile[? "tileId"];
+	
+	if (ds_list_find_index(exclusion_list, _tile_id) != -1) 
+		continue;
+
+	var _symmetry = _cur_tile[? "symmetry"];
 	var _sides = _cur_tile[? "sides"];
 	
 	var _symmetry_data = symmetry_data[_symmetry];
@@ -35,10 +39,10 @@ for (var i=0; i<_len; i++) {
 			_new_tile[? "transforms"] = j;
 			var _new_sides = ds_list_create();
 			ds_list_copy(_new_sides, _sides);
-			
-			if (j & 1) tile_neighbours_rotate(_new_sides);
-			if (j & 2) tile_neighbours_flip(_new_sides);
+
 			if (j & 4) tile_neighbours_mirror(_new_sides);
+			if (j & 2) tile_neighbours_flip(_new_sides);
+			if (j & 1) tile_neighbours_rotate(_new_sides);
 			
 			ds_map_add_list(_new_tile, "sides", _new_sides);
 			ds_list_add(_tile_configs, _new_tile);

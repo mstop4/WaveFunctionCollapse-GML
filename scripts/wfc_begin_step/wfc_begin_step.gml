@@ -3,7 +3,6 @@ var _cell = wfc_get_cell_least_entropy(wave_grid);
 
 // Check if all cells has been fully collapsed
 if (_cell[0] == -1) {
-	state = WFC_STATE.IDLE;
 	return true;
 }
 
@@ -15,6 +14,5 @@ done_grid[# _cell[0], _cell[1]] = CELL_STATE.CHECKED;
 ds_grid_copy(checked_grid, done_grid);
 
 wfc_push_neighbours(_cell[0], _cell[1]);
-state = WFC_STATE.PROPAGATION;
 
 return false;

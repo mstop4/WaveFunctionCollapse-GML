@@ -1,4 +1,5 @@
 ds_map_destroy(symmetry_map);
+ds_list_destroy(exclusion_list);
 
 for (var i=0; i<width_tiles; i++) {
 	for (var j=0; j<height_tiles; j++) {

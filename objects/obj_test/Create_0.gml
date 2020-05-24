@@ -2,6 +2,14 @@ init_enums();
 width_tiles = 30;
 height_tiles = 24;
 state = WFC_STATE.IDLE;
+async_mode = false;
+wave_num = 0;
+propagation_done = false;
+start_time = 0;
+step_time = 0;
+alotted_time = 1 / 30 * 1000000;
+
+exclusion_list = ds_list_create();
 
 init_data();
 
