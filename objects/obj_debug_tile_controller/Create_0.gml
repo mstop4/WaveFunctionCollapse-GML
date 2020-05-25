@@ -44,7 +44,7 @@ for (var i=0; i<_len; i++) {
 	}
 	
 	_xx++;
-	if (_xx > 4) {
+	if (_xx > 7) {
 		_xx = 0;
 		_yy++;
 	}

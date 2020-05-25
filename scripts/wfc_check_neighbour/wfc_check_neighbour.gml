@@ -15,6 +15,7 @@ var _num_nb_choices = ds_list_size(_nb_cell);
 var _tile_data = tile_data[? "tiles"];
 
 var _cell_changed = false;
+var _deleted_choices = ds_stack_create();
 
 // Go through all choices in current tile...
 for (var i=0; i<_num_cur_choices; i++) {
@@ -44,19 +45,22 @@ for (var i=0; i<_num_cur_choices; i++) {
 	
 	// If the current tile choice of the current tile has not been validated, remove it
 	if (!_cur_choice_valid) {
-		grid_changed = true;
-		_cell_changed = true;
-		ds_list_delete(_cur_cell, i);
-		_num_cur_choices = ds_list_size(_cur_cell);
-
-		// If there is only one choice left, put cell into done queue
-		if (_num_cur_choices == 1) {
-			ds_queue_enqueue(done_queue_x, _cell_x);
-			ds_queue_enqueue(done_queue_y, _cell_y);
-		}
-		
-		i--;
+		ds_stack_push(_deleted_choices, i);
 	}
 }
+
+var _cell_changed = ds_stack_size(_deleted_choices) > 0;
+
+while (!ds_stack_empty(_deleted_choices)) {
+	var _index = ds_stack_pop(_deleted_choices);
+	ds_list_delete(_cur_cell, _index);
+}
+
+if (ds_list_size(_cur_cell) == 1) {
+	ds_queue_enqueue(done_queue_x, _cell_x);
+	ds_queue_enqueue(done_queue_y, _cell_y);
+}
+
+ds_stack_destroy(_deleted_choices);
 
 return _cell_changed;

@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "7481bfa6-fee3-4523-ad73-8465115e28e2",
+            "Value": {
+                "id": "083f5f8b-3ebd-40b4-b1e1-9a0864aa10a9",
+                "resourcePath": "datafiles_yy\\terrain.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "9f0e7a29-1023-4363-87be-d6e23c0d4aff",
@@ -343,6 +351,14 @@
             }
         },
         {
+            "Key": "b6d1de53-4297-4ac9-800c-283144f59bff",
+            "Value": {
+                "id": "1c28fabe-7516-4c66-8c46-10be165b0a67",
+                "resourcePath": "tilesets\\ts_terrain\\ts_terrain.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "bc0fc9af-69f0-4115-8521-ce9fbb430ca2",
             "Value": {
                 "id": "3b3ffd21-bbc4-431f-80e7-c6beb3594296",
@@ -372,6 +388,14 @@
                 "id": "3eecf54d-34a7-4b18-ab32-afe02a890642",
                 "resourcePath": "views\/c1fa40e7-58f8-4a2f-959d-63a4228eb914.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c20e2ad2-a13b-419b-9f46-be9289b64b7b",
+            "Value": {
+                "id": "740fb155-13a6-42f1-ad89-16b1b31628b3",
+                "resourcePath": "sprites\\spr_terrain\\spr_terrain.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -4,7 +4,11 @@ if (state == WFC_STATE.IDLE) {
 	wave_num = 0;
 	ok = true;
 	
-	wfc_reset();
+	var _ok = wfc_reset();
+	
+	if (!_ok) {
+		exit;
+	}
 
 	while (true) {
 		wave_num++;

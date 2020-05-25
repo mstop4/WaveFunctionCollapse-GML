@@ -11,9 +11,9 @@
     "option_windows_description_info": "A GameMaker Studio 2 Game",
     "option_windows_disable_sandbox": false,
     "option_windows_display_cursor": true,
-    "option_windows_display_name": "Made in GameMaker Studio 2",
+    "option_windows_display_name": "Wave Function Collapse for GMS2",
     "option_windows_enable_steam": false,
-    "option_windows_executable_name": "${project_name}",
+    "option_windows_executable_name": "WFC-GMS2",
     "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",
     "option_windows_installer_finished": "${base_options_dir}\\windows\\installer\\finished.bmp",
     "option_windows_installer_header": "${base_options_dir}\\windows\\installer\\header.bmp",
@@ -32,7 +32,7 @@
     "option_windows_use_splash": false,
     "option_windows_version": {
         "build": 0,
-        "major": 1,
+        "major": 2,
         "minor": 0,
         "revision": 0
     },

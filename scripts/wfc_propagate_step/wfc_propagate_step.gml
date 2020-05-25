@@ -18,7 +18,8 @@ for (var i=0; i<SIDE.MAX; i++) {
 		continue;
 			
 	var _nb_cell = wave_grid[# _nb_x, _nb_y];
-	_cell_changed = wfc_check_neighbour(_cur_cell, _nb_cell, i, _cur_x, _cur_y);
+	_cell_changed = wfc_check_neighbour(_cur_cell, _nb_cell, i, _cur_x, _cur_y) || _cell_changed;
+	grid_changed = grid_changed || _cell_changed;
 }
 
 // Revert back to idle

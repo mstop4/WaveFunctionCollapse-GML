@@ -9,16 +9,26 @@ ds_stack_clear(tile_stack_y);
 var _tiles = tile_data[? "tiles"];
 var _num_tiles = ds_list_size(_tiles);
 
+// Create base choice list for all cells
+// Abort the WFC process if all available tiles are excluded
+var _base_choices = ds_list_create();
+for (var i=0; i<_num_tiles; i++) {
+	var _cur_tile = _tiles[| i];
+	var _tile_id = _cur_tile[? "tileId"];
+	
+	if (ds_list_find_index(exclusion_list, _tile_id) == -1)			
+		ds_list_add(_base_choices, i);
+}
+
+if (ds_list_size(_base_choices) == 0) {
+	show_message_async("No tiles available to use!");
+	return false;
+}
+
 for (var i=0; i<grid_width; i++) {
 	for (var j=0; j<grid_height; j++) {
-		ds_list_clear(wave_grid[# i, j]);
-
-		for (var k=0; k<_num_tiles; k++) {
-			var _cur_tile = _tiles[| k];
-			var _tile_id = _cur_tile[? "tileId"];
-			
-			if (ds_list_find_index(exclusion_list, _tile_id) == -1)			
-				ds_list_add(wave_grid[# i, j], k);
-		}
+		ds_list_copy(wave_grid[# i, j], _base_choices);
 	}
 }
+
+return true;

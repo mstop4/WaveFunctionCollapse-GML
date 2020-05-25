@@ -1,3 +1,4 @@
+randomise();
 init_enums();
 init_data();
 
@@ -13,7 +14,7 @@ propagation_done = false;
 start_time = 0;
 step_time = 0;
 
-error_tile_index = 0;
+error_tile_index = 17;
 raw_tile_data = load_tile_json(tile_data_json);
 tile_data = generate_tile_data(raw_tile_data, false);
 
