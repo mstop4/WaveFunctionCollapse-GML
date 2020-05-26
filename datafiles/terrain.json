@@ -24,30 +24,30 @@
     },
     
     {
-      "symmetry": "L",
+      "symmetry": "R",
       "tileId": 2,
       "sides": [
         { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        },
+        { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        },
+        { 
           "sideGroup": 2,
-          "neighbours": [ 2 ]
-        },
-        { 
-          "sideGroup": 0,
-          "neighbours": [ 0 ]
-        },
-        { 
-          "sideGroup": 0,
-          "neighbours": [ 0 ]
+          "neighbours": [ 1 ]
         },
         { 
           "sideGroup": 1,
-          "neighbours": [ 1 ]
+          "neighbours": [ 2 ]
         }
       ]
     },
     
     {
-      "symmetry": "T",
+      "symmetry": "R",
       "tileId": 3,
       "sides": [
         { 
@@ -55,7 +55,7 @@
           "neighbours": [ 3 ]
         },
         { 
-          "sideGroup": 2,
+          "sideGroup": 1,
           "neighbours": [ 2 ]
         },
         { 
@@ -63,41 +63,41 @@
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroup": 1,
+          "sideGroup": 2,
           "neighbours": [ 1 ]
         }
       ]
     },
     
     {
-      "symmetry": "Z",
+      "symmetry": "R",
       "tileId": 4,
       "sides": [
         { 
           "sideGroup": 1,
-          "neighbours": [ 1 ]
+          "neighbours": [ 2 ]
         },
         { 
           "sideGroup": 2,
-          "neighbours": [ 2 ]
+          "neighbours": [ 1 ]
         },
         { 
           "sideGroup": 1,
-          "neighbours": [ 1 ]
+          "neighbours": [ 2 ]
         },
         { 
           "sideGroup": 2,
-          "neighbours": [ 2 ]
+          "neighbours": [ 1 ]
         }
       ]
     },
     
     {
-      "symmetry": "L",
+      "symmetry": "R",
       "tileId": 5,
       "sides": [
         { 
-          "sideGroup": 1,
+          "sideGroup": 2,
           "neighbours": [ 1 ]
         },
         { 
@@ -109,7 +109,7 @@
           "neighbours": [ 3 ]
         },
         { 
-          "sideGroup": 2,
+          "sideGroup": 1,
           "neighbours": [ 2 ]
         }
       ]

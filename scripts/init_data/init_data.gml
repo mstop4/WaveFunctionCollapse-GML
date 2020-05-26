@@ -16,6 +16,15 @@ symmetry_data[SYMMETRY.R] = [0, 1, 2, 3, 4, 5, 6, 7];
 symmetry_data[SYMMETRY.M] = [0, 0, 0, 0, 1, 1, 1, 1];
 symmetry_data[SYMMETRY.E] = [0, 0, 1, 1, 0, 0, 1, 1];
 
+exemplar_tiles[SYMMETRY.X] = [0, -1, -1, -1, -1, -1, -1, -1];
+exemplar_tiles[SYMMETRY.T] = [0,  1, -1, -1, -1, -1,  2,  3];
+exemplar_tiles[SYMMETRY.I] = [0, -1, -1, -1, -1, -1, -1,  1];
+exemplar_tiles[SYMMETRY.L] = [0,  1, -1, -1, -1, -1,  2,  3];
+exemplar_tiles[SYMMETRY.Z] = [0, -1, -1, -1, -1, -1, -1,  1];
+exemplar_tiles[SYMMETRY.R] = [0,  1,  2,  3,  4,  5,  6,  7];
+exemplar_tiles[SYMMETRY.M] = [0, -1, -1, -1, -1, -1, -1,  1];
+exemplar_tiles[SYMMETRY.E] = [0, -1, -1, -1, -1, -1, -1,  1];
+
 symmetry_map = ds_map_create();
 symmetry_map[? "X"] = SYMMETRY.X;
 symmetry_map[? "T"] = SYMMETRY.T;
