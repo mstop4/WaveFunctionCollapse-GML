@@ -102,7 +102,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "fences.json",
+            "value": "terrain.json",
             "varName": "tile_data_json",
             "varType": 2
         },
@@ -116,7 +116,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1,
-            "value": "ts_fences",
+            "value": "ts_terrain",
             "varName": "tileset_index",
             "varType": 5
         },
@@ -158,7 +158,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "40",
+            "value": "25",
             "varName": "grid_width",
             "varType": 1
         },
@@ -172,7 +172,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "22",
+            "value": "14",
             "varName": "grid_height",
             "varType": 1
         },
