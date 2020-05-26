@@ -24,7 +24,7 @@
     },
     
     {
-      "symmetry": "R",
+      "symmetry": "L",
       "tileId": 2,
       "sides": [
         { 
@@ -47,7 +47,7 @@
     },
     
     {
-      "symmetry": "R",
+      "symmetry": "T",
       "tileId": 3,
       "sides": [
         { 
@@ -70,7 +70,7 @@
     },
     
     {
-      "symmetry": "R",
+      "symmetry": "Z",
       "tileId": 4,
       "sides": [
         { 
@@ -93,7 +93,7 @@
     },
     
     {
-      "symmetry": "R",
+      "symmetry": "L",
       "tileId": 5,
       "sides": [
         { 

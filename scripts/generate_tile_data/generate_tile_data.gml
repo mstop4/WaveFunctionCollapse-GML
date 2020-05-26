@@ -19,18 +19,12 @@ for (var i=0; i<_len; i++) {
 	var _sides = _cur_tile[? "sides"];
 	
 	var _symmetry_data = symmetry_data[_symmetry];
-	var _tile_configs = ds_list_create();
+	var _exemplar_data = exemplar_tiles[_symmetry];
+	var _exemplar_list = ds_list_create();
 	
-	// Generate tile symmetries
+	// Generate exemplar tiles
 	for (var j=0; j<8; j++) {
-		var _cur_config_index = _symmetry_data[j];
-
-		// Check tile cache
-		if (_cur_config_index < ds_list_size(_tile_configs)) {
-			if (_include_dupes) {
-				ds_list_add(_final_tiles, _tile_configs[| _cur_config_index]);
-			}
-		} else {
+		if (_exemplar_data[j] > -1) {
 			var _new_tile = ds_map_create();
 			_new_tile[? "tileId"] = _tile_id;
 			_new_tile[? "transforms"] = j;
@@ -42,13 +36,22 @@ for (var i=0; i<_len; i++) {
 			if (j & 1) tile_neighbours_rotate(_new_sides);
 			
 			ds_map_add_list(_new_tile, "sides", _new_sides);
-			ds_list_add(_tile_configs, _new_tile);
-			ds_list_add(_final_tiles, _new_tile);
+			ds_list_add(_exemplar_list, _new_tile);
+		}
+	}
+
+	// Assign exemplar tiles based on symmetry data
+	for (var j=0; j<8; j++) {
+		var _cur_symmetry_index = _symmetry_data[j];
+
+		// Check tile cache
+		if (_cur_symmetry_index == _exemplar_data[j] || _include_dupes) {
+			ds_list_add(_final_tiles, _exemplar_list[| _cur_symmetry_index]);
 		}
 		var _last_added = ds_list_size(_final_tiles) - 1;
 		ds_list_mark_as_map(_final_tiles, _last_added);
 	}
-	ds_list_destroy(_tile_configs);
+	ds_list_destroy(_exemplar_list);
 }
 
 return _final_tile_data;
