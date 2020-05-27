@@ -102,7 +102,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "railroad.json",
+            "value": "elec.json",
             "varName": "tile_data_json",
             "varType": 2
         },
@@ -116,7 +116,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1,
-            "value": "ts_railroad",
+            "value": "ts_elec",
             "varName": "tileset_index",
             "varType": 5
         },
@@ -130,7 +130,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "32",
+            "value": "14",
             "varName": "tile_width",
             "varType": 1
         },
@@ -144,7 +144,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "32",
+            "value": "14",
             "varName": "tile_height",
             "varType": 1
         },
