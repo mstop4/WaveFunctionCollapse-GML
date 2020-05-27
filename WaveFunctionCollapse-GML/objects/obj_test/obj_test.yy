@@ -102,7 +102,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "terrain.json",
+            "value": "railroad.json",
             "varName": "tile_data_json",
             "varType": 2
         },
@@ -116,7 +116,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1,
-            "value": "ts_terrain",
+            "value": "ts_railroad",
             "varName": "tileset_index",
             "varType": 5
         },
@@ -158,9 +158,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "25",
+            "value": "ceil(room_width \/ tile_width)",
             "varName": "grid_width",
-            "varType": 1
+            "varType": 4
         },
         {
             "id": "e2cf1bdc-d580-4047-945f-f4bc65c9c884",
@@ -172,9 +172,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "14",
+            "value": "ceil(room_height \/ tile_height)",
             "varName": "grid_height",
-            "varType": 1
+            "varType": 4
         },
         {
             "id": "241d6e9f-a94c-4ad1-af49-721fcf304c40",

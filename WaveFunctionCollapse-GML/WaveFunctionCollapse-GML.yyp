@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "ad2c38a5-ff7e-47d5-b7d1-d6fd8f162772",
+            "Value": {
+                "id": "754f4763-b0b1-4566-b64b-c35e7d9c8689",
+                "resourcePath": "tilesets\\ts_railroad\\ts_railroad.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "ada41852-da6a-43e1-9d61-4779c5b95689",
             "Value": {
                 "id": "0f54c955-6caa-4b6a-9d96-7f47c268f8bc",
@@ -404,6 +412,14 @@
                 "id": "a99e9944-8699-40dd-8163-b95b61a04c1b",
                 "resourcePath": "scripts\/wfc_propagate_step\/wfc_propagate_step.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c6fc81b6-e076-4954-87db-2009e459b919",
+            "Value": {
+                "id": "a4f1f263-524d-461c-abfc-884740dbc3eb",
+                "resourcePath": "datafiles_yy\\railroad.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -524,6 +540,14 @@
                 "id": "6d076d23-f98b-4e7e-a570-ac57f6f3f8ec",
                 "resourcePath": "tilesets\/ts_test\/ts_test.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "ddece999-eec5-4f54-b4b6-78da0f1004e4",
+            "Value": {
+                "id": "37c72380-f47a-4ca2-96fb-89fe77d79899",
+                "resourcePath": "sprites\\spr_railroad\\spr_railroad.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
