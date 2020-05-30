@@ -114,7 +114,7 @@
             "Key": "18e4725c-33be-4fed-94fc-3732624290fa",
             "Value": {
                 "id": "c911d878-31b2-485f-a969-69bbad35c15c",
-                "resourcePath": "datafiles_yy\\elec.json.yy",
+                "resourcePath": "datafiles_yy\\elec2.json.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -556,6 +556,14 @@
                 "id": "57e21af8-eb27-4c39-a49e-e6bf54614a02",
                 "resourcePath": "views\/d7bc1135-4ff3-4247-9d27-00a298409786.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d99da787-22e2-4b07-b94f-e50dd47bd8d4",
+            "Value": {
+                "id": "e5c0b924-f9a2-4839-967c-570ccee76e5f",
+                "resourcePath": "datafiles_yy\\elec.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
