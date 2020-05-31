@@ -2,6 +2,12 @@ randomise();
 init_enums();
 init_data();
 
+raw_tile_data = -1;
+tile_data = -1;
+
+
+load_tile_data();
+
 // Settings
 exclusion_list = ds_list_create();
 async_mode = false;
@@ -13,10 +19,7 @@ wave_num = 0;
 propagation_done = false;
 start_time = 0;
 step_time = 0;
-
 error_tile_index = 7;
-raw_tile_data = load_tile_json(tile_data_json);
-tile_data = generate_tile_data(raw_tile_data);
 
 wfc_layer = layer_create(0);
 wfc_tilemap = layer_tilemap_create(wfc_layer, 0, 0, tileset_index, grid_width, grid_height);

@@ -73,6 +73,16 @@
             "enumb": 65,
             "eventtype": 9,
             "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
+        },
+        {
+            "id": "e1bf96a2-c498-45ea-8875-c7837c264e00",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 82,
+            "eventtype": 9,
+            "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -102,7 +112,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "fences.json",
+            "value": "elec.json",
             "varName": "tile_data_json",
             "varType": 2
         },
@@ -116,7 +126,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1,
-            "value": "ts_fences",
+            "value": "ts_elec",
             "varName": "tileset_index",
             "varType": 5
         },
@@ -130,7 +140,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "32",
+            "value": "16",
             "varName": "tile_width",
             "varType": 1
         },
@@ -144,7 +154,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "32",
+            "value": "16",
             "varName": "tile_height",
             "varType": 1
         },
