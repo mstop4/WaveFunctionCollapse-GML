@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "terrain.json",
+            "value": "elec.json",
             "varName": "tile_data_json",
             "varType": 2
         },
@@ -86,7 +86,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1,
-            "value": "ts_terrain",
+            "value": "ts_elec",
             "varName": "tileset_index",
             "varType": 5
         },

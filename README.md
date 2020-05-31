@@ -6,15 +6,4 @@ A random tilemap generator for GameMaker Studio 2 based on [WaveFunctionCollapse
 
 ![Example 2](/images/example2.gif?raw=true)
 
-## Platform Compatibility
-
-| Platform    |   |
-|-------------|---|
-| Windows     | ✔️|
-| macOS       | ✔️|
-| Ubuntu      | ❓ |
-| HTML5       | ❌|
-| Android     | ❓ |
-| Amazon Fire | ❓ |
-| iOS         | ❓ |
-| tvOS        | ❓ |
+![Example 3](/images/example3.gif?raw=true)
