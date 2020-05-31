@@ -130,7 +130,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "16",
+            "value": "32",
             "varName": "tile_width",
             "varType": 1
         },
@@ -144,7 +144,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "16",
+            "value": "32",
             "varName": "tile_height",
             "varType": 1
         },
