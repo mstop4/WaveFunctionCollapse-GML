@@ -98,7 +98,7 @@
             "Key": "17875e8e-3593-4c87-a534-93d3ffc45ce7",
             "Value": {
                 "id": "f9eaae17-e25b-4f64-9136-a2136c84e870",
-                "resourcePath": "datafiles_yy\\tester.json.yy",
+                "resourcePath": "datafiles_yy\\Test\\tester.json.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -179,6 +179,14 @@
             "Value": {
                 "id": "2f9ed298-b5b6-43f3-9d91-205ece20bbb5",
                 "resourcePath": "views\/498b6b35-6946-4b01-9752-769bff940c7e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4aaf2588-77e5-42d1-aa7f-1a41af993920",
+            "Value": {
+                "id": "d02eafa9-23ca-4f4d-8745-5edfdd6aca3b",
+                "resourcePath": "views\\4aaf2588-77e5-42d1-aa7f-1a41af993920.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -602,7 +610,7 @@
             "Key": "e045e747-0322-43e4-a049-3a3011d3df6c",
             "Value": {
                 "id": "f4da22e7-e452-4816-b514-1e14b3a12c4f",
-                "resourcePath": "datafiles_yy\/test.json.yy",
+                "resourcePath": "datafiles_yy\\Test\\test.json.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -642,7 +650,7 @@
             "Key": "f262aca3-cfc6-4d30-b559-0291977cb9f3",
             "Value": {
                 "id": "48df7545-5ef7-43d4-9128-8d2f804f33ef",
-                "resourcePath": "datafiles_yy\/test2.json.yy",
+                "resourcePath": "datafiles_yy\\Test\\test2.json.yy",
                 "resourceType": "GMIncludedFile"
             }
         },

@@ -16,7 +16,7 @@ step_time = 0;
 
 error_tile_index = 7;
 raw_tile_data = load_tile_json(tile_data_json);
-tile_data = generate_tile_data(raw_tile_data, false);
+tile_data = generate_tile_data(raw_tile_data);
 
 wfc_layer = layer_create(0);
 wfc_tilemap = layer_tilemap_create(wfc_layer, 0, 0, tileset_index, grid_width, grid_height);

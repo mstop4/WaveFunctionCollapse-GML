@@ -16,6 +16,15 @@ symmetry_data[SYMMETRY.R] = [0, 1, 2, 3, 4, 5, 6, 7];
 symmetry_data[SYMMETRY.M] = [0, 0, 0, 0, 1, 1, 1, 1];
 symmetry_data[SYMMETRY.E] = [0, 0, 1, 1, 0, 0, 1, 1];
 
+base_weight[SYMMETRY.X] = 1;
+base_weight[SYMMETRY.T] = 1/4;
+base_weight[SYMMETRY.I] = 1/2;
+base_weight[SYMMETRY.L] = 1/4;
+base_weight[SYMMETRY.Z] = 1/2;
+base_weight[SYMMETRY.R] = 1/8;
+base_weight[SYMMETRY.M] = 1/2;
+base_weight[SYMMETRY.E] = 1/2;
+
 exemplar_tiles[SYMMETRY.X] = [0, -1, -1, -1, -1, -1, -1, -1];
 exemplar_tiles[SYMMETRY.T] = [0,  1, -1, -1, -1, -1,  2,  3];
 exemplar_tiles[SYMMETRY.I] = [0, -1, -1, -1, -1, -1, -1,  1];

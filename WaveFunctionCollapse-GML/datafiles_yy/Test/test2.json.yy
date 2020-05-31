@@ -8,7 +8,7 @@
     "exportAction": 0,
     "exportDir": "",
     "fileName": "test2.json",
-    "filePath": "datafiles",
+    "filePath": "datafiles\\Test",
     "freeData": false,
     "origName": "",
     "overwrite": false,
