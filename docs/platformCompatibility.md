@@ -6,7 +6,7 @@
 | macOS       | ✔️|
 | Ubuntu      | ❓ |
 | HTML5       | ✔️|
-| Android     | ❓ |
+| Android     | ✔️|
 | Amazon Fire | ❓ |
 | iOS         | ❓ |
 | tvOS        | ❓ |
