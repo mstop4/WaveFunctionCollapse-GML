@@ -1,11 +1,11 @@
 /// @arg raw_tile_data
-/// @arg include_dupes
 
 var _raw_tile_data = argument[0];
-var _include_dupes = argument[1];
 var _final_tile_data = ds_map_create();
 
 var _tiles = _raw_tile_data[? "tiles"];
+var _weights = _raw_tile_data[? "weights"];
+var _weights_len = ds_list_size(_weights);
 var _len = ds_list_size(_tiles);
 var _final_tiles = ds_list_create();
 ds_map_add_list(_final_tile_data, "tiles", _final_tiles);
@@ -25,9 +25,17 @@ for (var i=0; i<_len; i++) {
 	// Generate exemplar tiles
 	for (var j=0; j<8; j++) {
 		if (_exemplar_data[j] > -1) {
+			var _weight = 1;
+			if (_tile_id-1 < _weights_len) {
+				_weight = _weights[| _tile_id-1];
+			} else {
+				show_debug_message("WARNING: Weight for tile id " + string(_tile_id) + " not defined.");
+			}
+			
 			var _new_tile = ds_map_create();
 			_new_tile[? "tileId"] = _tile_id;
 			_new_tile[? "transforms"] = j;
+			_new_tile[? "weight"] = base_weight[_symmetry] * _weight;
 			var _new_sides = ds_list_create();
 			ds_list_copy(_new_sides, _sides);
 
@@ -45,7 +53,7 @@ for (var i=0; i<_len; i++) {
 		var _cur_symmetry_index = _symmetry_data[j];
 
 		// Check tile cache
-		if (_cur_symmetry_index == _exemplar_data[j] || _include_dupes) {
+		if (_cur_symmetry_index == _exemplar_data[j]) {
 			ds_list_add(_final_tiles, _exemplar_list[| _cur_symmetry_index]);
 		}
 		var _last_added = ds_list_size(_final_tiles) - 1;
