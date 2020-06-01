@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Test",
-    "path": "folders/Scripts/Test.yy",
+    "name": "Tile Prep",
+    "path": "folders/Scripts/Tile Prep.yy",
   },
   "resourceVersion": "1.0",
-  "name": "create_test_tiles",
+  "name": "tile_prep",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -1,4 +1,3 @@
-ds_map_destroy(symmetry_map);
 ds_list_destroy(exclusion_list);
 
 for (var i=0; i<grid_width; i++) {
@@ -20,3 +19,5 @@ ds_stack_destroy(tile_stack_x);
 ds_stack_destroy(tile_stack_y);
 
 layer_destroy(wfc_layer);
+
+destroy_data();

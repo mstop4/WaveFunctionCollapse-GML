@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Tile Prep.yy",
   },
   "resourceVersion": "1.0",
-  "name": "load_tile_json",
+  "name": "tile_prep_transforms",
   "tags": [],
   "resourceType": "GMScript",
 }

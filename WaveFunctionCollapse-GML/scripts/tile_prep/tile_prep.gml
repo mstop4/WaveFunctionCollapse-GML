@@ -1,7 +1,51 @@
-/// @arg raw_tile_data
-function generate_tile_data() {
+function load_tile_data() {
+	if (ds_exists(raw_tile_data, ds_type_map)) {
+		ds_map_destroy(raw_tile_data);
+	}
 
-	var _raw_tile_data = argument[0];
+	if (ds_exists(tile_data, ds_type_map)) {
+		ds_map_destroy(tile_data);
+	}
+
+	raw_tile_data = load_tile_json(tile_data_json);
+	tile_data = generate_tile_data(raw_tile_data);
+}
+
+/// @arg filename
+function load_tile_json(_filename) {
+	var _file = file_text_open_read(_filename);
+	var _raw_json = "";
+
+	while (!file_text_eof(_file)) {
+		_raw_json += file_text_readln(_file);
+	}
+
+	file_text_close(_file);
+
+	var _tile_data = json_decode(_raw_json);
+	var _tiles = _tile_data[? "tiles"];
+	var _len = ds_list_size(_tiles);
+
+	if (!ds_map_exists(_tile_data, "weights")) {
+		var _weights = ds_list_create();
+	
+		for (var i=0; i<_len; i++) {
+			ds_list_add(_weights, 1);
+		}
+	
+		ds_map_add_list(_tile_data, "weights", _weights);
+	}
+
+	for (var i=0; i<_len; i++) {
+		var _tile = _tiles[| i];
+		_tile[? "symmetry"] = variable_struct_get(symmetry_map, _tile[? "symmetry"]);
+	}
+
+	return _tile_data;
+}
+
+/// @arg raw_tile_data
+function generate_tile_data(_raw_tile_data) {
 	var _final_tile_data = ds_map_create();
 
 	var _tiles = _raw_tile_data[? "tiles"];
@@ -13,11 +57,10 @@ function generate_tile_data() {
 
 	// Generate full tile data from raw tile and symmetry data
 	for (var i=0; i<_len; i++) {
-		var _cur_tile = _tiles[| i];
-		var _tile_id = _cur_tile[? "tileId"];
+		var _tile_id = _tiles[| i][? "tileId"];
 
-		var _symmetry = _cur_tile[? "symmetry"];
-		var _sides = _cur_tile[? "sides"];
+		var _symmetry = _tiles[| i][? "symmetry"];
+		var _sides = _tiles[| i][? "sides"];
 	
 		var _symmetry_data = symmetry_data[_symmetry];
 		var _exemplar_data = exemplar_tiles[_symmetry];
@@ -64,6 +107,4 @@ function generate_tile_data() {
 	}
 
 	return _final_tile_data;
-
-
 }

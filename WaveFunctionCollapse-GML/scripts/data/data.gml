@@ -1,3 +1,39 @@
+enum SYMMETRY {
+	X,
+	T,
+	I,
+	L,
+	Z,
+	R,
+	M,
+	E,
+	MAX
+}
+
+enum SIDE {
+	TOP,
+	LEFT,
+	BOTTOM,
+	RIGHT,
+	MAX
+}
+
+enum CELL_STATE {
+	IDLE,
+	IN_STACK,
+	COLLAPSED,
+	TILED,
+	MAX
+}
+
+enum WFC_STATE {
+	IDLE,
+	BEGIN_STEP,
+	PROPAGATION,
+	END_STEP,
+	MAX
+}
+
 function init_data() {
 	// 0 - none
 	// 1 - rotate
@@ -35,15 +71,16 @@ function init_data() {
 	exemplar_tiles[SYMMETRY.M] = [0, -1, -1, -1, -1, -1, -1,  1];
 	exemplar_tiles[SYMMETRY.E] = [0, -1, -1, -1, -1, -1, -1,  1];
 
-	symmetry_map = ds_map_create();
-	symmetry_map[? "X"] = SYMMETRY.X;
-	symmetry_map[? "T"] = SYMMETRY.T;
-	symmetry_map[? "I"] = SYMMETRY.I;
-	symmetry_map[? "L"] = SYMMETRY.L;
-	symmetry_map[? "Z"] = SYMMETRY.Z;
-	symmetry_map[? "R"] = SYMMETRY.R;
-	symmetry_map[? "M"] = SYMMETRY.M;
-	symmetry_map[? "E"] = SYMMETRY.E;
+	symmetry_map = {
+		X: SYMMETRY.X,
+		T: SYMMETRY.T,
+		I: SYMMETRY.I,
+		L: SYMMETRY.L,
+		Z: SYMMETRY.Z,
+		R: SYMMETRY.R,
+		M: SYMMETRY.M,
+		E: SYMMETRY.E
+	}
 
 	neighbour_offsets[SIDE.TOP] = [0, -1];
 	neighbour_offsets[SIDE.LEFT] = [-1, 0];
@@ -54,7 +91,8 @@ function init_data() {
 	opposite_neighbour[SIDE.BOTTOM] = SIDE.TOP;
 	opposite_neighbour[SIDE.LEFT] = SIDE.RIGHT;
 	opposite_neighbour[SIDE.RIGHT] = SIDE.LEFT;
+}
 
-
-
+function destroy_data() {
+	delete symmetry_map;
 }
