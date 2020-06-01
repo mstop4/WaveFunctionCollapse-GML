@@ -5,7 +5,7 @@
 | Windows     | ✔️|
 | macOS       | ✔️|
 | Ubuntu      | ❓ |
-| HTML5       | ❌|
+| HTML5       | ✔️|
 | Android     | ❓ |
 | Amazon Fire | ❓ |
 | iOS         | ❓ |

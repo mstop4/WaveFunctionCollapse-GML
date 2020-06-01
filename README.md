@@ -1,6 +1,6 @@
 # Wave Function Collapse for GameMaker Studio 2
 
-A random tilemap generator for GameMaker Studio 2 based on [WaveFunctionCollapse](https://github.com/mxgmn/WaveFunctionCollapse) by mxgmn.
+A random tilemap generator for GameMaker Studio 2. Based on the simple tiled model of [WaveFunctionCollapse](https://github.com/mxgmn/WaveFunctionCollapse) by mxgmn.
 
 ![Example 1](/images/example1.gif?raw=true)
 

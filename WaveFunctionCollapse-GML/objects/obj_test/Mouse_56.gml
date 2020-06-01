@@ -1,0 +1,1 @@
+wfc_async_start();
