@@ -1,8 +1,12 @@
 {
-    "id": "ded9ae06-dd6a-4dfd-9aae-1960e146ba16",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "tile_neighbours_mirror",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Tile Prep",
+    "path": "folders/Scripts/Tile Prep.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "tile_neighbours_mirror",
+  "tags": [],
+  "resourceType": "GMScript",
 }

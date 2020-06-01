@@ -1,8 +1,12 @@
 {
-    "id": "2ba8fb4f-1fe0-404a-9247-48bd3303bc9e",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "tile_neighbours_flip",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Tile Prep",
+    "path": "folders/Scripts/Tile Prep.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "tile_neighbours_flip",
+  "tags": [],
+  "resourceType": "GMScript",
 }

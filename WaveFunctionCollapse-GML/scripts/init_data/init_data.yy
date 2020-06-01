@@ -1,8 +1,12 @@
 {
-    "id": "1ed6c3ed-4a28-45c9-b76e-c3313cfac985",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "init_data",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Init",
+    "path": "folders/Scripts/Init.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "init_data",
+  "tags": [],
+  "resourceType": "GMScript",
 }

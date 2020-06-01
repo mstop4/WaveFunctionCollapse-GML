@@ -1,8 +1,12 @@
 {
-    "id": "905c2b11-74df-4875-a969-30f6086f6131",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "wfc_get_cell_least_entropy",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Helpers",
+    "path": "folders/Scripts/WFC/API/Helpers.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "wfc_get_cell_least_entropy",
+  "tags": [],
+  "resourceType": "GMScript",
 }

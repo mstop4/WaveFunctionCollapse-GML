@@ -1,8 +1,12 @@
 {
-    "id": "a853a89d-5f7a-4a42-91de-8855792c0059",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "wfc_collapse_cell",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Helpers",
+    "path": "folders/Scripts/WFC/API/Helpers.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "wfc_collapse_cell",
+  "tags": [],
+  "resourceType": "GMScript",
 }
