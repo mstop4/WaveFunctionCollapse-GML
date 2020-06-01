@@ -6,4 +6,4 @@ A random tilemap generator for GameMaker Studio 2 based on [WaveFunctionCollapse
 
 ![Example 2](/images/example2.gif?raw=true)
 
-![Example 3](/images/example3.gif?raw=true)
+![Example 3](/images/example4.gif?raw=true)

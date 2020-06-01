@@ -1,11 +1,8 @@
-randomise();
 init_enums();
 init_data();
 
 raw_tile_data = -1;
 tile_data = -1;
-
-
 load_tile_data();
 
 // Settings
