@@ -23,12 +23,10 @@ wfc_tilemap = layer_tilemap_create(wfc_layer, 0, 0, tileset_index, grid_width, g
 wave_grid = ds_grid_create(grid_width, grid_height);				// working grid of all possible tile indexes
 checked_grid = ds_grid_create(grid_width, grid_height);     // grid to keep track of which cells are checked
 done_grid = ds_grid_create(grid_width, grid_height);        // grid to keep track of which cells are completely collapsed
-done_queue_x = ds_queue_create();
-done_queue_y = ds_queue_create();
+done_queue = ds_queue_create();
 grid_changed = true;
 
-tile_stack_x = ds_stack_create();
-tile_stack_y = ds_stack_create();
+tile_stack = ds_stack_create();
 
 // Init wave grid
 for (var i=0; i<grid_width; i++) {

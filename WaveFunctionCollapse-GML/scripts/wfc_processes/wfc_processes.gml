@@ -52,6 +52,7 @@ function wfc_sync_process() {
 	}
 }
 
+
 function wfc_async_start() {
 	if (state == WFC_STATE.IDLE) {
 		randomise();
@@ -67,6 +68,7 @@ function wfc_async_start() {
 		}
 	}
 }
+
 
 function wfc_async_process() {
 	switch (state) {

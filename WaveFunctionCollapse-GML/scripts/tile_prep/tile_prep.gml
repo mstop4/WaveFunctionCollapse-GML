@@ -11,6 +11,7 @@ function load_tile_data() {
 	tile_data = generate_tile_data(raw_tile_data);
 }
 
+
 /// @arg filename
 function load_tile_json(_filename) {
 	var _file = file_text_open_read(_filename);
@@ -43,6 +44,7 @@ function load_tile_json(_filename) {
 
 	return _tile_data;
 }
+
 
 /// @arg raw_tile_data
 function generate_tile_data(_raw_tile_data) {

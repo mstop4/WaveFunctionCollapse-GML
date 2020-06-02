@@ -16,6 +16,7 @@ function tile_neighbours_flip() {
 	}
 }
 
+
 /// @arg sides
 function tile_neighbours_mirror() {
 	// Mirror tile neighbours horizontally
@@ -33,6 +34,7 @@ function tile_neighbours_mirror() {
 		ds_list_mark_as_map(_sides, i);
 	}
 }
+
 
 /// @arg sides
 function tile_neighbours_rotate() {

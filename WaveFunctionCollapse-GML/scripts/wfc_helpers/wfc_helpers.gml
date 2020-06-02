@@ -109,8 +109,7 @@ function wfc_check_neighbour(_cur_cell, _nb_cell, _side, _cell) {
 	}
 
 	if (ds_list_size(_cur_cell) == 1) {
-		ds_queue_enqueue(done_queue_x, _cell.x);
-		ds_queue_enqueue(done_queue_y, _cell.y);
+		ds_queue_enqueue(done_queue, _cell);
 	}
 
 	ds_stack_destroy(_deleted_choices);
@@ -125,38 +124,34 @@ function wfc_push_neighbours(_cell) {
 
 	// top, bottom
 	for (var i=-1; i<2; i+=2) {
-		var _new_x = _cell.x;
-		var _new_y = _cell.y + i;
+		var _new = new Vector2(_cell.x, _cell.y + i);
 		
 		// Ignore out of bounds neighbours
-		if (_new_x < 0 || _new_x >= grid_width || _new_y < 0 || _new_y >= grid_height)
+		if (_new.x < 0 || _new.x >= grid_width || _new.y < 0 || _new.y >= grid_height)
 			continue;
 			
 		// Ignore neighbours that aren't idle
-		if (checked_grid[# _new_x, _new_y] != CELL_STATE.IDLE) 
+		if (checked_grid[# _new.x, _new.y] != CELL_STATE.IDLE) 
 			continue;
 
-		ds_stack_push(tile_stack_x, _new_x);
-		ds_stack_push(tile_stack_y, _new_y);
-		checked_grid[# _new_x, _new_y] = CELL_STATE.IN_STACK;
+		ds_stack_push(tile_stack, _new);
+		checked_grid[# _new.x, _new.y] = CELL_STATE.IN_STACK;
 	}
 
 	// left, right
 	for (var i=-1; i<2; i+=2) {
-		var _new_x = _cell.x + i;
-		var _new_y = _cell.y;
+		var _new = new Vector2(_cell.x + i, _cell.y);
 		
 		// Ignore out of bounds neighbours
-		if (_new_x < 0 || _new_x >= grid_width || _new_y < 0 || _new_y >= grid_height)
+		if (_new.x < 0 || _new.x >= grid_width || _new.y < 0 || _new.y >= grid_height)
 			continue;
 			
 		// Ignore neighbours that aren't idle
-		if (checked_grid[# _new_x, _new_y] != CELL_STATE.IDLE)
+		if (checked_grid[# _new.x, _new.y] != CELL_STATE.IDLE)
 			continue;
 
-		ds_stack_push(tile_stack_x, _new_x);
-		ds_stack_push(tile_stack_y, _new_y);
-		checked_grid[# _new_x, _new_y] = CELL_STATE.IN_STACK;
+		ds_stack_push(tile_stack, _new);
+		checked_grid[# _new.x, _new.y] = CELL_STATE.IN_STACK;
 	}
 }
 

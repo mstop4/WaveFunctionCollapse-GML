@@ -10,8 +10,7 @@ function wfc_begin_step() {
 	// Collapse cell
 	wfc_collapse_cell(wave_grid[# _cell.x, _cell.y]);
 	done_grid[# _cell.x, _cell.y] = CELL_STATE.COLLAPSED;
-	ds_queue_enqueue(done_queue_x, _cell.x);
-	ds_queue_enqueue(done_queue_y, _cell.y);
+	ds_queue_enqueue(done_queue, _cell);
 
 	wfc_push_neighbours(_cell);
 
@@ -23,33 +22,32 @@ function wfc_end_step() {
 	// Assign tiles to cells that have fully collapsed
 	var _tile_data = tile_data[? "tiles"];
 
-	while (!ds_queue_empty(done_queue_x) && !ds_queue_empty(done_queue_y)) {
-		var _x = ds_queue_dequeue(done_queue_x);
-		var _y = ds_queue_dequeue(done_queue_y);
+	while (!ds_queue_empty(done_queue)) {
+		var _cell = ds_queue_dequeue(done_queue);
 	
-		if (done_grid[# _x, _y] != CELL_STATE.TILED) {
-			var _len = ds_list_size(wave_grid[# _x, _y]);
+		if (done_grid[# _cell.x, _cell.y] != CELL_STATE.TILED) {
+			var _len = ds_list_size(wave_grid[# _cell.x, _cell.y]);
 		
 			if (_len == 1) {
-				var _index = wave_grid[# _x, _y][| 0];
+				var _index = wave_grid[# _cell.x, _cell.y][| 0];
 				var _cur_tile = _tile_data[| _index];
 				var _tile_id = _cur_tile[? "tileId"];
 				var _transforms = _cur_tile[? "transforms"];
 					
-				var _data = tilemap_get(wfc_tilemap, _x, _y);
+				var _data = tilemap_get(wfc_tilemap, _cell.x, _cell.y);
 				_data = tile_set_index(_data, _tile_id);
 				_data = tile_set_rotate(_data, _transforms & 1);
 				_data = tile_set_flip(_data, _transforms & 2);
 				_data = tile_set_mirror(_data, _transforms & 4);
-				tilemap_set(wfc_tilemap, _data, _x, _y);
+				tilemap_set(wfc_tilemap, _data, _cell.x, _cell.y);
 			} else if (_len == 0) {
-				show_debug_message("OOPS: No valid tile choices at " + string(_x) + ", " + string(_y));
-				var _data = tilemap_get(wfc_tilemap, _x, _y);
+				show_debug_message("OOPS: No valid tile choices at " + string(_cell.x) + ", " + string(_cell.y));
+				var _data = tilemap_get(wfc_tilemap, _cell.x, _cell.y);
 				_data = tile_set_index(_data, error_tile_index);
-				tilemap_set(wfc_tilemap, _data, _x, _y);
+				tilemap_set(wfc_tilemap, _data, _cell.x, _cell.y);
 				return false;
 			}
-			done_grid[# _x, _y] = CELL_STATE.TILED;
+			done_grid[# _cell.x, _cell.y] = CELL_STATE.TILED;
 		}
 	}
 
@@ -58,10 +56,10 @@ function wfc_end_step() {
 
 
 function wfc_propagate_step() {
-	if (ds_stack_empty(tile_stack_x) || ds_stack_empty(tile_stack_y))
+	if (ds_stack_empty(tile_stack))
 		return true;
 
-	var _cur = new Vector2(ds_stack_pop(tile_stack_x), ds_stack_pop(tile_stack_y));
+	var _cur = ds_stack_pop(tile_stack);
 	var _cur_cell = wave_grid[# _cur.x, _cur.y];
 
 	var _cell_changed = false;
@@ -96,10 +94,8 @@ function wfc_reset() {
 	ds_grid_clear(done_grid, CELL_STATE.IDLE);
 	ds_grid_clear(checked_grid, CELL_STATE.IDLE);
 
-	ds_queue_clear(done_queue_x);
-	ds_queue_clear(done_queue_y);
-	ds_stack_clear(tile_stack_x);
-	ds_stack_clear(tile_stack_y);
+	ds_queue_clear(done_queue);
+	ds_stack_clear(tile_stack);
 	var _tiles = tile_data[? "tiles"];
 	var _num_tiles = ds_list_size(_tiles);
 
