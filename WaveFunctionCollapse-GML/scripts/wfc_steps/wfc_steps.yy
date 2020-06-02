@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Steps",
-    "path": "folders/Scripts/WFC/API/Steps.yy",
+    "name": "API",
+    "path": "folders/Scripts/WFC/API.yy",
   },
   "resourceVersion": "1.0",
-  "name": "wfc_propagate_step",
+  "name": "wfc_steps",
   "tags": [],
   "resourceType": "GMScript",
 }

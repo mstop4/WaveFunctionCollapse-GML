@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Helpers",
-    "path": "folders/Scripts/WFC/API/Helpers.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "wfc_push_neighbours",
+  "name": "complex_types",
   "tags": [],
   "resourceType": "GMScript",
 }
