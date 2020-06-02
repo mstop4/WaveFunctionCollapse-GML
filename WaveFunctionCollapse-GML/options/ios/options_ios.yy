@@ -4,10 +4,10 @@
     "mvc": "1.0",
     "name": "iOS",
     "option_ios_apple_sign_in": false,
-    "option_ios_bundle_name": "com.company.game",
+    "option_ios_bundle_name": "com.quadolrgames.wfc",
     "option_ios_defer_home_indicator": false,
     "option_ios_devices": 2,
-    "option_ios_display_name": "Made in GameMaker Studio 2",
+    "option_ios_display_name": "Wave Function Collapse for GMS2",
     "option_ios_facebook_app_display_name": "",
     "option_ios_facebook_id": "",
     "option_ios_half_ipad1_textures": false,
@@ -32,8 +32,8 @@
     "option_ios_interpolate_pixels": false,
     "option_ios_orientation_landscape": true,
     "option_ios_orientation_landscape_flipped": true,
-    "option_ios_orientation_portrait": true,
-    "option_ios_orientation_portrait_flipped": true,
+    "option_ios_orientation_portrait": false,
+    "option_ios_orientation_portrait_flipped": false,
     "option_ios_output_dir": "~\/GameMakerStudio2\/iOS",
     "option_ios_push_notifications": false,
     "option_ios_scale": 0,
@@ -68,7 +68,7 @@
     "option_ios_use_facebook": false,
     "option_ios_version": {
         "build": 0,
-        "major": 1,
+        "major": 2,
         "minor": 0,
         "revision": 0
     }

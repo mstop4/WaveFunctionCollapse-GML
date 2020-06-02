@@ -1,10 +1,6 @@
 switch (state) {
 	case WFC_STATE.BEGIN_STEP:
 		wave_num++;
-		// if (wave_num == 586) {
-		// 	show_debug_message("stop");
-		// }
-		// show_debug_message("Wave " + string(wave_num));
 		propagation_done = false;
 
 		var _wfc_done = wfc_begin_step();
