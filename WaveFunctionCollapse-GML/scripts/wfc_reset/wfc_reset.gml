@@ -31,4 +31,6 @@ for (var i=0; i<grid_width; i++) {
 	}
 }
 
+ds_list_destroy(_base_choices);
+
 return true;
