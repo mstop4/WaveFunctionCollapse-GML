@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "322e28e6-ddee-409e-94be-8af4b7964d0d",
+            "Value": {
+                "id": "5d643a98-0276-4af0-b20e-16837da15fda",
+                "resourcePath": "datafiles_yy\\kenney.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "33cfe8bc-80a5-479c-bf34-e4ed1e303b55",
             "Value": {
                 "id": "2a0d73b5-5ef2-41cb-945a-158545101c33",
@@ -268,14 +276,6 @@
                 "id": "c73d186f-e3d6-48e5-81be-3f893c8c9552",
                 "resourcePath": "scripts\/wfc_begin_step\/wfc_begin_step.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "800a0c22-8260-4a31-85ab-8d2c1e9c77b0",
-            "Value": {
-                "id": "a8677bc8-b7cc-462e-bfc2-affd5f151f85",
-                "resourcePath": "datafiles_yy\/kenney.json.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {

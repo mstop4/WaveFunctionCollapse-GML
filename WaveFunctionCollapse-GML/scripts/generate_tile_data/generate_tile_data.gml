@@ -26,8 +26,8 @@ for (var i=0; i<_len; i++) {
 	for (var j=0; j<8; j++) {
 		if (_exemplar_data[j] > -1) {
 			var _weight = 1;
-			if (_tile_id-1 < _weights_len) {
-				_weight = _weights[| _tile_id-1];
+			if (_tile_id < _weights_len) {
+				_weight = _weights[| _tile_id];
 			} else {
 				show_debug_message("WARNING: Weight for tile id " + string(_tile_id) + " not defined.");
 			}
