@@ -1,5 +1,5 @@
 {
-  "weights": [0, 1, 1, 1, 1, 0],
+  "weights": [0, 0, 1, 1, 1, 1, 0],
   "tiles": [
     {
       "symmetry": "T",

@@ -68,8 +68,8 @@ function init_data() {
 	exemplar_tiles[SYMMETRY.L] = [0,  1, -1, -1, -1, -1,  2,  3];
 	exemplar_tiles[SYMMETRY.Z] = [0, -1, -1, -1, -1, -1, -1,  1];
 	exemplar_tiles[SYMMETRY.R] = [0,  1,  2,  3,  4,  5,  6,  7];
-	exemplar_tiles[SYMMETRY.M] = [0, -1, -1, -1, -1, -1, -1,  1];
-	exemplar_tiles[SYMMETRY.E] = [0, -1, -1, -1, -1, -1, -1,  1];
+	exemplar_tiles[SYMMETRY.M] = [0, -1, -1, -1,  1, -1, -1, -1];
+	exemplar_tiles[SYMMETRY.E] = [0, -1,  1, -1, -1, -1, -1, -1];
 
 	symmetry_map = {
 		X: SYMMETRY.X,
