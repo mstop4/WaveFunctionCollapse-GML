@@ -16,7 +16,7 @@ wave_num = 0;
 propagation_done = false;
 start_time = 0;
 step_time = 0;
-error_tile_index = 7;
+error_tile_index = 10;
 
 wfc_layer = layer_create(0);
 wfc_tilemap = layer_tilemap_create(wfc_layer, 0, 0, tileset_index, grid_width, grid_height);

@@ -1,5 +1,6 @@
 // Assign tiles to cells that have fully collapsed
 var _tile_data = tile_data[? "tiles"];
+var _ok = true;
 
 while (!ds_queue_empty(done_queue_x) && !ds_queue_empty(done_queue_y)) {
 	var _x = ds_queue_dequeue(done_queue_x);
@@ -26,10 +27,10 @@ while (!ds_queue_empty(done_queue_x) && !ds_queue_empty(done_queue_y)) {
 			var _data = tilemap_get(wfc_tilemap, _x, _y);
 			_data = tile_set_index(_data, error_tile_index);
 			tilemap_set(wfc_tilemap, _data, _x, _y);
-			return false;
+			_ok = false;
 		}
 		done_grid[# _x, _y] = CELL_STATE.TILED;
 	}
 }
 
-return true;
+return _ok;
