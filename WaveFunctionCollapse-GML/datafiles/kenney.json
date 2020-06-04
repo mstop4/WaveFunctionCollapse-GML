@@ -1,4 +1,5 @@
 {
+  "weights": [10, 10, 1, 1, 10, 10, 10],
   "tiles": [   
     {
       "symmetry": "X",
@@ -92,7 +93,7 @@
       ]
     },
     
- {
+    {
       "symmetry": "M",
       "tileId": 4,
       "sides": [
@@ -102,7 +103,7 @@
         },
         { 
           "sideGroup": 0,
-          "neighbours": [ 0 ]
+          "neighbours": [ 0, 1 ]
         },
         { 
           "sideGroup": 1,
@@ -148,7 +149,7 @@
         },
         { 
           "sideGroup": 0,
-          "neighbours": [ 0 ]
+          "neighbours": [ 0, 1 ]
         },
         { 
           "sideGroup": 1,
@@ -156,9 +157,9 @@
         },
         { 
           "sideGroup": 0,
-          "neighbours": [ 0 ]
+          "neighbours": [ 0, 1 ]
         }
       ]
-    },
+    }
   ]
 }
