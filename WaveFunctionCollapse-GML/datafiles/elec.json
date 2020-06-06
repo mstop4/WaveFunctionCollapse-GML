@@ -1,9 +1,9 @@
 {
-  "weights": [0, 3, 3, 3, 1, 1, 1, 1, 1, 3, 3, 3, 1, 1, 1],
   "tiles": [
     {
       "symmetry": "I",
       "tileId": 1,
+      "weight": 3,
       "sides": [
         { 
           "sideGroup": 1,
@@ -27,6 +27,7 @@
     {
       "symmetry": "L",
       "tileId": 2,
+      "weight": 3,
       "sides": [
         { 
           "sideGroup": 1,
@@ -50,6 +51,7 @@
     {
       "symmetry": "T",
       "tileId": 3,
+      "weight": 3,
       "sides": [
         { 
           "sideGroup": 0,
@@ -73,6 +75,7 @@
     {
       "symmetry": "I",
       "tileId": 4,
+      "weight": 1,
       "sides": [
         { 
           "sideGroup": 1,
@@ -96,6 +99,7 @@
     {
       "symmetry": "T",
       "tileId": 5,
+      "weight": 1,
       "sides": [
         { 
           "sideGroup": 2,
@@ -119,6 +123,7 @@
     {
       "symmetry": "I",
       "tileId": 6,
+      "weight": 1,
       "sides": [
         { 
           "sideGroup": 0,
@@ -142,6 +147,7 @@
     {
       "symmetry": "T",
       "tileId": 7,
+      "weight": 1,
       "sides": [
         { 
           "sideGroup": 1,
@@ -165,6 +171,7 @@
     {
       "symmetry": "I",
       "tileId": 8,
+      "weight": 1,
       "sides": [
         { 
           "sideGroup": 0,
@@ -188,6 +195,7 @@
     {
       "symmetry": "T",
       "tileId": 9,
+      "weight": 3,
       "sides": [
         { 
           "sideGroup": 1,
@@ -211,6 +219,7 @@
     {
       "symmetry": "X",
       "tileId": 10,
+      "weight": 3,
       "sides": [
         { 
           "sideGroup": 4,
@@ -234,6 +243,7 @@
     {
       "symmetry": "L",
       "tileId": 11,
+      "weight": 3,
       "sides": [
         { 
           "sideGroup": 0,
@@ -257,6 +267,7 @@
     {
       "symmetry": "Z",
       "tileId": 12,
+      "weight": 1,
       "sides": [
         { 
           "sideGroup": 1,
@@ -280,6 +291,7 @@
     {
       "symmetry": "L",
       "tileId": 13,
+      "weight": 1,
       "sides": [
         { 
           "sideGroup": 1,
@@ -303,6 +315,7 @@
     {
       "symmetry": "X",
       "tileId": 14,
+      "weight": 1,
       "sides": [
         { 
           "sideGroup": 0,
