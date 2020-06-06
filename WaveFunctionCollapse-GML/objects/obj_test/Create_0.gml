@@ -8,7 +8,6 @@ load_tile_data();
 // Settings
 exclusion_list = ds_list_create();
 async_mode = false;
-//ds_list_add(exclusion_list, 4, 8);
 
 // Working vars
 state = WFC_STATE.IDLE;
@@ -16,7 +15,7 @@ wave_num = 0;
 propagation_done = false;
 start_time = 0;
 step_time = 0;
-error_tile_index = 10;
+error_tile_index = 16;
 
 wfc_layer = layer_create(0);
 wfc_tilemap = layer_tilemap_create(wfc_layer, 0, 0, tileset_index, grid_width, grid_height);
