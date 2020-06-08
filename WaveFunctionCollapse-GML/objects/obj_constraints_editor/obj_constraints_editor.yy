@@ -1,58 +1,48 @@
 {
-    "id": "7831144d-55c2-4066-bff0-6a3457f35302",
+    "id": "67edc49d-a2ac-4acb-8e79-27f1fdd269eb",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_debug_tile_controller",
+    "name": "obj_constraints_editor",
     "eventList": [
         {
-            "id": "64266113-f60b-4447-92d9-acf1d4481af9",
+            "id": "4bf7b4ef-5baa-447a-bf65-923707e3fcdb",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "7831144d-55c2-4066-bff0-6a3457f35302"
+            "m_owner": "67edc49d-a2ac-4acb-8e79-27f1fdd269eb"
         },
         {
-            "id": "a27b1b77-31eb-4da3-a025-982536b6d846",
+            "id": "bc8826ee-1628-43e2-b1a9-d02ef0d18613",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 12,
-            "m_owner": "7831144d-55c2-4066-bff0-6a3457f35302"
+            "m_owner": "67edc49d-a2ac-4acb-8e79-27f1fdd269eb"
         },
         {
-            "id": "3f9cf9ca-c46e-4423-8925-7c5d2bac30e7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 49,
-            "eventtype": 9,
-            "m_owner": "7831144d-55c2-4066-bff0-6a3457f35302"
-        },
-        {
-            "id": "878e2668-5a8b-4210-829e-393bbbfff151",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 50,
-            "eventtype": 9,
-            "m_owner": "7831144d-55c2-4066-bff0-6a3457f35302"
-        },
-        {
-            "id": "66457f65-538b-45ac-8485-82ffccef53e5",
+            "id": "bd8d15c2-871a-487b-bd0a-9af4757a98ad",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 27,
             "eventtype": 9,
-            "m_owner": "7831144d-55c2-4066-bff0-6a3457f35302"
+            "m_owner": "67edc49d-a2ac-4acb-8e79-27f1fdd269eb"
+        },
+        {
+            "id": "3d9ddd13-aefe-49cb-a448-8408f3ee8cae",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "67edc49d-a2ac-4acb-8e79-27f1fdd269eb"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -73,7 +63,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "360a53a0-246e-4887-85e4-9121f4335983",
+            "id": "1c79f07d-6fee-4682-b279-f16d46a8e03e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -87,7 +77,7 @@
             "varType": 2
         },
         {
-            "id": "a308d867-8fd5-4dbd-9114-23483b3d6f24",
+            "id": "79856b55-7278-4234-b317-0d1ed487c381",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -101,7 +91,7 @@
             "varType": 5
         },
         {
-            "id": "0bf5d51d-cdab-4e14-8a3c-0284761e34d6",
+            "id": "4d066713-7ab2-4cac-9b8f-6e3e1076f8b1",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -115,7 +105,7 @@
             "varType": 1
         },
         {
-            "id": "3b26a7e5-73e7-41cc-b998-4dd8bc8a6d08",
+            "id": "089970bb-87ee-4375-bfd9-668d76a42c11",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -126,6 +116,20 @@
             "resourceFilter": 1023,
             "value": "32",
             "varName": "tile_height",
+            "varType": 1
+        },
+        {
+            "id": "44282654-3a8f-4ca5-898c-c05c54e4ef4b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "draw_mode",
             "varType": 1
         }
     ],

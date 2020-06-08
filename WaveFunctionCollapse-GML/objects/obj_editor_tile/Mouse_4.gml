@@ -1,0 +1,1 @@
+editor_id.cur_edited_tile = id;
