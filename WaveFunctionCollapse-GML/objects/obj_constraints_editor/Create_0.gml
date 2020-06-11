@@ -3,8 +3,10 @@ raw_tile_data = -1;
 tile_data = -1;
 load_tile_data();
 
-side_mode = 0;
 cur_edited_tile = noone;
+side_mode = 0;
+side_array = -1;
+side_label = "None";
 side_data_offsets[SIDE.TOP] = [16, -16];
 side_data_offsets[SIDE.BOTTOM] = [16, 32];
 side_data_offsets[SIDE.LEFT] = [-16, 0];
