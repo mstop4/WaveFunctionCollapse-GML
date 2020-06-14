@@ -42,7 +42,7 @@
             "Key": "05a9b490-eb83-4027-917c-a5e3affe7c2f",
             "Value": {
                 "id": "fad83c1b-4f28-49d6-b02e-83c258db3ff6",
-                "resourcePath": "objects\/obj_editor_tile\/obj_editor_tile.yy",
+                "resourcePath": "objects\\obj_editor_final_tile\\obj_editor_final_tile.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "70714a5a-56a2-41f6-bc63-84ea91a35a97",
+            "Value": {
+                "id": "16fcea9d-74a4-48e0-8996-250e39d478f4",
+                "resourcePath": "views\\70714a5a-56a2-41f6-bc63-84ea91a35a97.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7096df86-a7ab-4757-820d-3eb7ffa36ea2",
             "Value": {
                 "id": "32dd76d9-7173-4bef-942f-efe2208fd752",
@@ -343,6 +351,14 @@
             }
         },
         {
+            "Key": "8a18a5bc-f781-4e06-8c39-3deef46fdbd9",
+            "Value": {
+                "id": "06315183-a55a-4661-a2d7-d82e57900cee",
+                "resourcePath": "objects\\obj_editor_tile_mode_button\\obj_editor_tile_mode_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8fca7542-39ed-484d-b067-4a9365976f82",
             "Value": {
                 "id": "aa9e73b0-19d5-425a-9e4d-bc9a5add965d",
@@ -355,6 +371,14 @@
             "Value": {
                 "id": "22ed5a76-0c66-4a29-97fa-0c6bd7bc908e",
                 "resourcePath": "scripts\/wfc_get_cell_least_entropy\/wfc_get_cell_least_entropy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9115ad93-b109-40e6-90d8-198181408f35",
+            "Value": {
+                "id": "6978ff2a-68b4-450c-bb94-d87065dc5532",
+                "resourcePath": "scripts\\create_final_tile_ui\\create_final_tile_ui.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -420,6 +444,14 @@
                 "id": "b38e7d4d-ee3c-446b-ac38-10128f9a2b93",
                 "resourcePath": "options\/linux\/options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a9464031-b8b0-4bc3-9948-8d20120a70b0",
+            "Value": {
+                "id": "84fa3558-75b5-4e51-a76e-185eef77f45f",
+                "resourcePath": "objects\\obj_editor_raw_tile\\obj_editor_raw_tile.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -588,6 +620,14 @@
                 "id": "ecb84129-50b9-468a-a78f-bc4d7a89cf1b",
                 "resourcePath": "rooms\/room_wfc\/room_wfc.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d3c08206-3d55-433d-a028-ed33d0c4ca42",
+            "Value": {
+                "id": "285112bd-4953-46b7-a18d-126f954914eb",
+                "resourcePath": "scripts\\create_raw_tile_ui\\create_raw_tile_ui.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -789,7 +829,9 @@
         "f05ac5ee-a248-47dc-9dfd-d33072a14c64",
         "2eb1560f-6456-4152-a502-6ecd0a2a6ec4",
         "78c36e44-9fb1-4f33-a606-c17a86d87185",
-        "f9a6d14f-21c6-40a3-8e60-577c1a34ec7d"
+        "f9a6d14f-21c6-40a3-8e60-577c1a34ec7d",
+        "d3c08206-3d55-433d-a028-ed33d0c4ca42",
+        "9115ad93-b109-40e6-90d8-198181408f35"
     ],
     "tutorial": ""
 }
