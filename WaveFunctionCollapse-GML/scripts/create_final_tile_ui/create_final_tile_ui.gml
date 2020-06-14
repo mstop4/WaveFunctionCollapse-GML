@@ -9,7 +9,7 @@ for (var i=0; i<_len; i++) {
 	var _cur_tile = _tile_data[| i];
 	var _sides = _cur_tile[? "sides"];
 	
-	var _tile = instance_create_layer(32 + _xx * 64, 32 + _yy * 64, "Final_Layer", obj_editor_final_tile);
+	var _tile = instance_create_layer(32 + _xx * 64, 32 + _yy * 64, final_ui_layer, obj_editor_final_tile);
 	_tile.tile_data = tile_set_index(_tile.tile_data, _cur_tile[? "tileId"]);
 	_tile.tile_data = tile_set_rotate(_tile.tile_data, _cur_tile[? "transforms"] & 1);
 	_tile.tile_data = tile_set_flip(_tile.tile_data, _cur_tile[? "transforms"] & 2);
