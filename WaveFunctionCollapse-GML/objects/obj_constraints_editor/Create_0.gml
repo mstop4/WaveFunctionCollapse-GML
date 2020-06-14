@@ -33,7 +33,7 @@ _tile_mode_button.editor_id = id;
 create_raw_tile_ui();
 create_final_tile_ui();
 
-layer_set_visible(raw_ui_layer, true);
-layer_set_visible(final_ui_layer, false);
+toggle_layer(raw_ui_layer, true);
+toggle_layer(final_ui_layer, false);
 
 draw_set_font(fnt_default);
