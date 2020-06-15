@@ -15,22 +15,21 @@ for (var i=0; i<_len; i++) {
 	_tile.tile_index = i;
 	_tile.tile_id = _cur_tile[? "tileId"];
 	_tile.symmetry = _cur_tile[? "symmetry"];
-	_tile.symmetry_label = ds_map
+	_tile.symmetry_label = ds_map_find_key(symmetry_map, _cur_tile[? "symmetry"]);
 	_tile.weight = _cur_tile[? "weight"];
 	_tile.editor_id = id;
 	
 	for (var j=0; j<4; j++) {
 		var _cur_side = _sides[| j];
-		var _side_group = _cur_side[? "sideGroup"];
 		var _neighbours = _cur_side[? "neighbours"];
 		
 		var _neighbours_len = ds_list_size(_neighbours);
 		
-		_tile.side_groups[j] = string(_side_group);
-		_tile.neighbours[j] = "";
+		_tile.side_groups[| j] = _cur_side[? "sideGroup"];
+		_tile.neighbours[| j] = "";
 		
 		for (var k=0; k<_neighbours_len; k++) {
-			_tile.neighbours[j] += string(_neighbours[| k]) + (k < _neighbours_len-1 ?  ", " : "");
+			_tile.neighbours[| j] += string(_neighbours[| k]) + (k < _neighbours_len-1 ?  ", " : "");
 		}
 	}
 	

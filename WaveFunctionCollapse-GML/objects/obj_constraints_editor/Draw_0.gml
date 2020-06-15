@@ -9,12 +9,12 @@ if (instance_exists(cur_edited_tile)) {
 		draw_text(944, 32, "Tile Index: " + string(cur_edited_tile.tile_index));
 		draw_text(944, 48, "Tile ID: " + string(cur_edited_tile.tile_id));
 
-		draw_text(944 + 16, 128 - 16, string(side_array[SIDE.TOP]));
-		draw_text(944 + 16, 128 + 48, string(side_array[SIDE.BOTTOM]));
+		draw_text(944 + 16, 128 - 16, string(side_array[| SIDE.TOP]));
+		draw_text(944 + 16, 128 + 48, string(side_array[| SIDE.BOTTOM]));
 		draw_set_halign(fa_right);
-		draw_text(944 - 16, 128 + 16, string(side_array[SIDE.LEFT]));
+		draw_text(944 - 16, 128 + 16, string(side_array[| SIDE.LEFT]));
 		draw_set_halign(fa_left);
-		draw_text(944 + 48, 128 + 16, string(side_array[SIDE.RIGHT]));
+		draw_text(944 + 48, 128 + 16, string(side_array[| SIDE.RIGHT]));
 	}
 	
 	else if (tile_mode == EDITOR_TILE_MODE.RAW) {
@@ -23,12 +23,12 @@ if (instance_exists(cur_edited_tile)) {
 		draw_text(944, 48, "Tile ID: " + string(cur_edited_tile.tile_id));
 		draw_text(944, 80, "Symmetry: " + cur_edited_tile.symmetry_label);
 		
-		draw_text(944 + 16, 128 - 16, string(side_array[SIDE.TOP]));
-		draw_text(944 + 16, 128 + 48, string(side_array[SIDE.BOTTOM]));
+		draw_text(944 + 16, 128 - 16, string(side_array[| SIDE.TOP]));
+		draw_text(944 + 16, 128 + 48, string(side_array[| SIDE.BOTTOM]));
 		draw_set_halign(fa_right);
-		draw_text(944 - 16, 128 + 16, string(side_array[SIDE.LEFT]));
+		draw_text(944 - 16, 128 + 16, string(side_array[| SIDE.LEFT]));
 		draw_set_halign(fa_left);
-		draw_text(944 + 48, 128 + 16, string(side_array[SIDE.RIGHT]));
+		draw_text(944 + 48, 128 + 16, string(side_array[| SIDE.RIGHT]));
 	}
 	
 	else {
