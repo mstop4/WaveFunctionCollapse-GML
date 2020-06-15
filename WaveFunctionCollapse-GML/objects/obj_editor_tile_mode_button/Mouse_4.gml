@@ -9,3 +9,8 @@ with (editor_id) {
 		toggle_layer(final_ui_layer, true);
 	}
 }
+
+with (obj_editor_preview_tile) {
+	tile_data = 0;
+	visible = false;
+}
