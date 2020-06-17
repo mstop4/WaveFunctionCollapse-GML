@@ -16,10 +16,10 @@ for (var i=0; i<8; i++) {
 	ds_list_copy(_cur_exemplar_inst.side_groups, side_groups);
 	ds_list_copy(_cur_exemplar_inst.neighbours, neighbours);
 	
-	if (i & 1) {
-		_new_tile_data = tile_set_rotate(_new_tile_data, true);
-		tile_neighbours_rotate(_cur_exemplar_inst.side_groups);
-		tile_neighbours_rotate(_cur_exemplar_inst.neighbours);
+	if (i & 4) {
+		_new_tile_data = tile_set_mirror(_new_tile_data, true);
+		tile_neighbours_mirror(_cur_exemplar_inst.side_groups);
+		tile_neighbours_mirror(_cur_exemplar_inst.neighbours);
 	}
 	
 	if (i & 2) {
@@ -28,10 +28,10 @@ for (var i=0; i<8; i++) {
 		tile_neighbours_flip(_cur_exemplar_inst.neighbours);
 	}
 	
-	if (i & 4) {
-		_new_tile_data = tile_set_mirror(_new_tile_data, true);
-		tile_neighbours_mirror(_cur_exemplar_inst.side_groups);
-		tile_neighbours_mirror(_cur_exemplar_inst.neighbours);
+	if (i & 1) {
+		_new_tile_data = tile_set_rotate(_new_tile_data, true);
+		tile_neighbours_rotate(_cur_exemplar_inst.side_groups);
+		tile_neighbours_rotate(_cur_exemplar_inst.neighbours);
 	}
 	
 	_cur_exemplar_inst.tile_data = _new_tile_data;
