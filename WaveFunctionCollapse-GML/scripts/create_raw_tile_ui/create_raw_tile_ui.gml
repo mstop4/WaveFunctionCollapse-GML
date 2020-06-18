@@ -8,30 +8,10 @@ var _yy = 0;
 // Create raw tile list
 for (var i=0; i<_len; i++) {
 	var _cur_tile = _tile_data[| i];
-	var _sides = _cur_tile[? "sides"];
 	
 	var _tile = instance_create_layer(32 + _xx * 64, 32 + _yy * 64, raw_ui_layer, obj_editor_raw_tile);
-	_tile.tile_data = tile_set_index(_tile.tile_data, _cur_tile[? "tileId"]);
-	_tile.tile_index = i;
-	_tile.tile_id = _cur_tile[? "tileId"];
-	_tile.symmetry = _cur_tile[? "symmetry"];
-	_tile.symmetry_label = ds_map_find_key(symmetry_map, _cur_tile[? "symmetry"]);
-	_tile.weight = _cur_tile[? "weight"];
 	_tile.editor_id = id;
-	
-	for (var j=0; j<4; j++) {
-		var _cur_side = _sides[| j];
-		var _neighbours = _cur_side[? "neighbours"];
-		
-		var _neighbours_len = ds_list_size(_neighbours);
-		
-		_tile.side_groups[| j] = _cur_side[? "sideGroup"];
-		_tile.neighbours[| j] = "";
-		
-		for (var k=0; k<_neighbours_len; k++) {
-			_tile.neighbours[| j] += string(_neighbours[| k]) + (k < _neighbours_len-1 ?  ", " : "");
-		}
-	}
+	update_raw_tile(_tile, _cur_tile, i);
 	
 	ds_list_add(raw_tile_buttons, _tile);
 	
