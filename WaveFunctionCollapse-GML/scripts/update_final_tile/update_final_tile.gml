@@ -29,7 +29,7 @@ for (var j=0; j<4; j++) {
 		_tile.neighbours[| j] += string(_neighbours[| i]) + (i < _neighbours_len-1 ?  ", " : "");
 	}
 	
-	_tile.possible_neighbours = "";
+	_tile.possible_neighbours[j] = "";
 	
 	// Find possible neighbours
 	for (var i=0; i<_all_tiles_len; i++) {
@@ -37,9 +37,9 @@ for (var j=0; j<4; j++) {
 		var _nb_sides = _nb_tile[? "sides"];
 		var _nb_side = _nb_sides[| opposite_neighbour[j]];
 		
-		if (ds_list_find_index(_nb_side[? "neighbours"], _cur_side[? "sideGroup"])
-				&& ds_list_find_index(_neighbours, _nb_side[? "neighbours"])) {
-
+		if (ds_list_find_index(_nb_side[? "neighbours"], _cur_side[? "sideGroup"]) != -1
+				&& ds_list_find_index(_neighbours, _nb_side[? "sideGroup"]) != -1) {
+				_tile.possible_neighbours[j] += string(i) + ", ";
 		}
 	}
 }
