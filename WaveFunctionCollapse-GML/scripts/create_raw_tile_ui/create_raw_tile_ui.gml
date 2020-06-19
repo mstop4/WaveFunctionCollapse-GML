@@ -22,7 +22,7 @@ for (var i=0; i<_len; i++) {
 	}
 }
 
-// Create exemplar tile list
+// Create transformed tile list
 for (var i=0; i<2; i++) {
 	for (var j=0; j<4; j++) {
 		
@@ -32,4 +32,12 @@ for (var i=0; i<2; i++) {
 
 		ds_list_add(exemplar_tile_previews, _tile);
 	}
+}
+
+// Create edit side buttons
+for (var i=0; i<4; i++) {
+	var _side_offsets = side_data_offsets[i];
+	var _button = instance_create_layer(944 + _side_offsets[0], 128 + _side_offsets[1], raw_ui_layer, obj_editor_edit_side_button);
+	_button.side_index = i;
+	_button.editor_id = id;
 }

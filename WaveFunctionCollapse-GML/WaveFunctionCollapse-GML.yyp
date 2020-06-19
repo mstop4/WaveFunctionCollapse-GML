@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "050510de-3338-4824-ae68-94854ac7562f",
+            "Value": {
+                "id": "5311827e-342a-4879-8e2e-60b32551d9d8",
+                "resourcePath": "sprites\/spr_mask_16\/spr_mask_16.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "059ed920-fd0e-4360-a499-43d990748d7d",
             "Value": {
                 "id": "3b9a5a7e-6793-4e7c-842c-f88537e7e6b0",
@@ -114,7 +122,7 @@
             "Key": "17346b62-728b-45a9-b46b-5447932d5268",
             "Value": {
                 "id": "9d9d29ad-6977-4378-b07e-c8ea2ed97a29",
-                "resourcePath": "scripts\\update_raw_tile\\update_raw_tile.yy",
+                "resourcePath": "scripts\/update_raw_tile\/update_raw_tile.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -298,7 +306,7 @@
             "Key": "7096df86-a7ab-4757-820d-3eb7ffa36ea2",
             "Value": {
                 "id": "32dd76d9-7173-4bef-942f-efe2208fd752",
-                "resourcePath": "sprites\/spr_mask\/spr_mask.yy",
+                "resourcePath": "sprites\/spr_mask_32\/spr_mask_32.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -474,7 +482,7 @@
             "Key": "ac15f164-c15f-4a55-b838-e4a66d7531f4",
             "Value": {
                 "id": "56563b41-b30f-410a-8bf4-5dc11db78251",
-                "resourcePath": "scripts\\update_final_tile\\update_final_tile.yy",
+                "resourcePath": "scripts\/update_final_tile\/update_final_tile.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -604,6 +612,14 @@
                 "id": "ce99ddd8-029e-47a3-ab58-ae57259ab906",
                 "resourcePath": "scripts\/init_enums\/init_enums.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cc1485c5-c2c2-4357-bd51-1575b5f4e8d2",
+            "Value": {
+                "id": "60dec465-d698-402b-9420-8c1ad2601f4e",
+                "resourcePath": "objects\/obj_editor_edit_side_button\/obj_editor_edit_side_button.yy",
+                "resourceType": "GMObject"
             }
         },
         {
