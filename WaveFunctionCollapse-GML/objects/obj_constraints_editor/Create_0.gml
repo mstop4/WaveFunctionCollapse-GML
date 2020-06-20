@@ -17,7 +17,6 @@ side_mode = EDITOR_SIDE_MODE.EDGE_IDS;
 
 // Working Vars
 cur_edited_tile = noone;
-raw_tile_buttons = ds_list_create();
 exemplar_tile_previews = ds_list_create();
 final_tile_buttons = ds_list_create();
 side_array = -1;

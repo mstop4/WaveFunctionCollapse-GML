@@ -23,7 +23,8 @@ for (var j=0; j<4; j++) {
 	var _neighbours_len = ds_list_size(_neighbours);
 		
 	_tile.side_groups[| j] = _cur_side[? "sideGroup"];
-	_tile.neighbours[| j] = "";
+	_tile.neighbours[| j] = _cur_side[? "neighbours"];
+	_tile.neighbours_string[| j] = "";
 		
 	for (var i=0; i<_neighbours_len; i++) {
 		_tile.neighbours[| j] += string(_neighbours[| i]) + (i < _neighbours_len-1 ?  ", " : "");

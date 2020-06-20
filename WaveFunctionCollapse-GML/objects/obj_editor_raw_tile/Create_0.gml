@@ -7,5 +7,6 @@ symmetry_label = "X";
 weight = 1;
 side_groups = ds_list_create();
 neighbours = ds_list_create();
+neighbours_string = "";
 
 is_hover = false;

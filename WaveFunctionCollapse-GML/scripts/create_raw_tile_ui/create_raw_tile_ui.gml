@@ -13,8 +13,6 @@ for (var i=0; i<_len; i++) {
 	_tile.editor_id = id;
 	update_raw_tile(_tile, _cur_tile, i);
 	
-	ds_list_add(raw_tile_buttons, _tile);
-	
 	_xx++;
 	if (_xx > 7) {
 		_xx = 0;
@@ -40,4 +38,5 @@ for (var i=0; i<4; i++) {
 	var _button = instance_create_layer(944 + _side_offsets[0], 128 + _side_offsets[1], raw_ui_layer, obj_editor_edit_side_button);
 	_button.side_index = i;
 	_button.editor_id = id;
+	instance_deactivate_object(_button);
 }

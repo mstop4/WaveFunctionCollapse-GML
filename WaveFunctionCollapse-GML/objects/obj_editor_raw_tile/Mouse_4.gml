@@ -38,3 +38,5 @@ for (var i=0; i<8; i++) {
 	_cur_exemplar_inst.is_exemplar = _exemplar_data[i] != -1;
 	_cur_exemplar_inst.visible = true;
 }
+
+instance_activate_object(obj_editor_edit_side_button);
