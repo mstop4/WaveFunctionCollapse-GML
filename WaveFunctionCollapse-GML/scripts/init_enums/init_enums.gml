@@ -33,3 +33,16 @@ enum WFC_STATE {
 	END_STEP,
 	MAX
 }
+
+enum EDITOR_SIDE_MODE {
+	NONE,
+	EDGE_IDS,
+	NEIGHBOURS,
+	MAX
+}
+
+enum EDITOR_TILE_MODE {
+	RAW,
+	FINAL,
+	MAX
+}

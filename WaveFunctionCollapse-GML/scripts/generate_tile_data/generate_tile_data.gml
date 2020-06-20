@@ -4,8 +4,6 @@ var _raw_tile_data = argument[0];
 var _final_tile_data = ds_map_create();
 
 var _tiles = _raw_tile_data[? "tiles"];
-var _weights = _raw_tile_data[? "weights"];
-var _weights_len = ds_list_size(_weights);
 var _len = ds_list_size(_tiles);
 var _final_tiles = ds_list_create();
 ds_map_add_list(_final_tile_data, "tiles", _final_tiles);
@@ -24,13 +22,8 @@ for (var i=0; i<_len; i++) {
 	
 	// Generate exemplar tiles
 	for (var j=0; j<8; j++) {
-		if (_exemplar_data[j] > -1) {
-			var _weight = 1;
-			if (_tile_id < _weights_len) {
-				_weight = _weights[| _tile_id];
-			} else {
-				show_debug_message("WARNING: Weight for tile id " + string(_tile_id) + " not defined.");
-			}
+		if (_exemplar_data[j] > -1) {	
+			var _weight = is_undefined(_cur_tile[? "weight"]) ? 1 : _cur_tile[? "weight"];
 			
 			var _new_tile = ds_map_create();
 			_new_tile[? "tileId"] = _tile_id;

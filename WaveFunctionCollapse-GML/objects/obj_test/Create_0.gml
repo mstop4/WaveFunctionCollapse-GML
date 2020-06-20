@@ -1,4 +1,3 @@
-init_enums();
 init_data();
 
 raw_tile_data = -1;
