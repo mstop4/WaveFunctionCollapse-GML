@@ -4,7 +4,7 @@ tile_index = -1;
 tile_id = -1;
 side_groups = ds_list_create();
 neighbours = ds_list_create();
-neighbours_string = "";
+neighbours_string = ds_list_create();
 possible_neighbours = ["", "", "", ""];
 
 is_hover = false;

@@ -17,3 +17,4 @@ with (obj_editor_preview_tile) {
 }
 
 instance_deactivate_object(obj_editor_edit_side_button);
+instance_deactivate_object(obj_editor_entry);

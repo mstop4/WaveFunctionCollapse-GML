@@ -19,6 +19,7 @@ side_mode = EDITOR_SIDE_MODE.EDGE_IDS;
 cur_edited_tile = noone;
 exemplar_tile_previews = ds_list_create();
 final_tile_buttons = ds_list_create();
+entry_button_pool = ds_list_create();
 side_array = -1;
 
 var _side_mode_button = instance_create_layer(800, 32, "Control", obj_editor_side_mode_button);
