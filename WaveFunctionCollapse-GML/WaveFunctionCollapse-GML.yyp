@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "09427ff6-f77e-4947-a4fd-3354d5a97eb8",
+            "Value": {
+                "id": "77d28dbd-43ae-46fc-98e4-5a52169d3be4",
+                "resourcePath": "sprites\\spr_kenney_roads\\spr_kenney_roads.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0a7275e1-328b-414c-8566-a1860540a24c",
             "Value": {
                 "id": "8a51d179-9c0d-42ed-9310-ae31de09a830",
@@ -423,6 +431,14 @@
             }
         },
         {
+            "Key": "973dba78-1abf-47e0-85f0-2cd5b5b58490",
+            "Value": {
+                "id": "01f5d32a-6e09-40d6-b48a-2f9e9e1975f8",
+                "resourcePath": "tilesets\\ts_kenney_roads\\ts_kenney_roads.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "9f668bc1-c4c5-4ecc-97f7-cdc3814233be",
             "Value": {
                 "id": "ed253d94-7f6d-4de9-94f8-3cefad0763ce",
@@ -596,6 +612,14 @@
                 "id": "0b7ecc89-973b-4552-8065-b5eea59c8165",
                 "resourcePath": "views\/c7ba3ce4-84f4-4af5-b4ba-c25ae004a008.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c845be82-ed6b-4d3c-a27a-4e1053279e54",
+            "Value": {
+                "id": "196013f8-2436-4aef-b429-0c017554854a",
+                "resourcePath": "datafiles_yy\\kenneyroads.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

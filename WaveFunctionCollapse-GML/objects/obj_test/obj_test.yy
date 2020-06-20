@@ -132,7 +132,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "kenney.json",
+            "value": "kenneyroads.json",
             "varName": "tile_data_json",
             "varType": 2
         },
@@ -146,7 +146,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1,
-            "value": "ts_kenney",
+            "value": "ts_kenney_roads",
             "varName": "tileset_index",
             "varType": 5
         },
