@@ -6,6 +6,7 @@ load_tile_data();
 
 // Settings
 exclusion_list = ds_list_create();
+// ds_list_add(exclusion_list, 16, 17, 18, 19, 20);
 async_mode = false;
 
 // Working vars
