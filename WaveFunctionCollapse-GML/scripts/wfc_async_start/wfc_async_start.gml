@@ -1,5 +1,5 @@
 if (state == WFC_STATE.IDLE) {
-	//random_set_seed(628826461);
+	// random_set_seed(1029390554);
 	randomise();
 	show_debug_message("Seed: " + string(random_get_seed()));
 	start_time = current_time;

@@ -1,4 +1,6 @@
 init_data();
+window_set_size(room_width, room_height);
+surface_resize(application_surface, room_width, room_height);
 
 raw_tile_data = -1;
 tile_data = -1;
