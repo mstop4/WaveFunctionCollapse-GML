@@ -1,0 +1,51 @@
+{
+  "tiles": [
+    {
+      "symmetry": "X",
+      "tileId": 1,
+      "weight": 1,
+      "sides": [
+        { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        },
+        { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        },
+        { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        },
+        { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        }
+      ]
+    },
+
+    {
+      "symmetry": "X",
+      "tileId": 1,
+      "weight": 1,
+      "sides": [
+        { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        },
+        { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        },
+        { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        },
+        { 
+          "sideGroup": 0,
+          "neighbours": [ 0 ]
+        }
+      ]
+    },
+  ]
+}

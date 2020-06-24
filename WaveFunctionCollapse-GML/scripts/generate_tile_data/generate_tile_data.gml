@@ -24,9 +24,11 @@ for (var i=0; i<_len; i++) {
 	for (var j=0; j<8; j++) {
 		if (_exemplar_data[j] > -1) {	
 			var _weight = is_undefined(_cur_tile[? "weight"]) ? 1 : _cur_tile[? "weight"];
+			var _new_tile_id = ds_list_create();
+			ds_list_copy(_new_tile_id, _tile_id);
 			
 			var _new_tile = ds_map_create();
-			_new_tile[? "tileId"] = _tile_id;
+			ds_map_add_list(_new_tile, "tileId", _new_tile_id);
 			_new_tile[? "transforms"] = j;
 			_new_tile[? "weight"] = base_weight[_symmetry] * _weight;
 			var _new_sides = ds_list_create();

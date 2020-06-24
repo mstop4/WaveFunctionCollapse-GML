@@ -14,7 +14,7 @@ var _tile_data = json_decode(_raw_json);
 var _tiles = _tile_data[? "tiles"];
 var _len = ds_list_size(_tiles);
 
-if (!ds_map_exists(_tile_data, "weights")) {
+/*if (!ds_map_exists(_tile_data, "weights")) {
 	var _weights = ds_list_create();
 	
 	for (var i=0; i<_len; i++) {
@@ -22,7 +22,7 @@ if (!ds_map_exists(_tile_data, "weights")) {
 	}
 	
 	ds_map_add_list(_tile_data, "weights", _weights);
-}
+}*/
 
 for (var i=0; i<_len; i++) {
 	var _tile = _tiles[| i];
