@@ -132,7 +132,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "kenney.json",
+            "value": "kenneymonochrome.json",
             "varName": "tile_data_json",
             "varType": 2
         },
@@ -146,7 +146,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1,
-            "value": "ts_kenney",
+            "value": "ts_kenney_monochrome",
             "varName": "tileset_index",
             "varType": 5
         },
@@ -160,7 +160,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "64",
+            "value": "16",
             "varName": "tile_width",
             "varType": 1
         },
@@ -174,7 +174,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "64",
+            "value": "16",
             "varName": "tile_height",
             "varType": 1
         },

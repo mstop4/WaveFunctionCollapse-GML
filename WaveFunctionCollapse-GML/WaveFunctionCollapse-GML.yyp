@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "011f3b01-b9d3-4734-b15d-57c347c7b7b3",
+            "Value": {
+                "id": "8ca7f07f-9b81-4e6e-8d06-db33f600a813",
+                "resourcePath": "datafiles_yy\\kenneymonochrome.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "050510de-3338-4824-ae68-94854ac7562f",
             "Value": {
                 "id": "5311827e-342a-4879-8e2e-60b32551d9d8",
@@ -159,6 +167,14 @@
             }
         },
         {
+            "Key": "1c537ade-ec34-4903-9e51-ec8bed846ade",
+            "Value": {
+                "id": "e427305a-9468-4b6d-b1f3-13b52d75ceaa",
+                "resourcePath": "tilesets\\ts_kenney_monochrome\\ts_kenney_monochrome.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "1e100037-3322-4c51-b34a-844769a78f05",
             "Value": {
                 "id": "21a2cfbb-69cf-44e1-b64e-f82ce40f4efb",
@@ -284,6 +300,14 @@
                 "id": "d43a35fb-8981-48df-8ec1-f08705529ce2",
                 "resourcePath": "scripts\/tile_neighbours_rotate\/tile_neighbours_rotate.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "66644051-8123-43a3-9354-0066780f769c",
+            "Value": {
+                "id": "428279bc-1963-42a8-9b01-ab9fc1719e94",
+                "resourcePath": "sprites\\spr_kenney_monochrome\\spr_kenney_monochrome.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
