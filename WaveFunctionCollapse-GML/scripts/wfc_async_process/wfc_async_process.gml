@@ -26,6 +26,7 @@ switch (state) {
 				
 		if (!_ok) {
 			state = WFC_STATE.IDLE;
+			errored = true;
 			show_message_async("Something went wrong");
 			return true;
 		} else if (!grid_changed) {

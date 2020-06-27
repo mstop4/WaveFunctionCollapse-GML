@@ -8,7 +8,7 @@ load_tile_data();
 
 // Settings
 exclusion_list = ds_list_create();
-// ds_list_add(exclusion_list, 16, 17, 18, 19, 20);
+// ds_list_add(exclusion_list, 14);
 async_mode = false;
 
 // Working vars
@@ -17,7 +17,12 @@ wave_num = 0;
 propagation_done = false;
 start_time = 0;
 step_time = 0;
-error_tile_index = 16;
+
+// error debugging
+errored = false;
+last_collapse_x = -1;
+last_collapse_y = -1;
+last_collapse_tile_data = 0;
 
 wfc_layer = layer_create(0);
 wfc_tilemap = layer_tilemap_create(wfc_layer, 0, 0, tileset_index, grid_width, grid_height);
@@ -38,3 +43,12 @@ for (var i=0; i<grid_width; i++) {
 		wave_grid[# i, j] = ds_list_create();
 	}
 }
+
+/*var _cursor = instance_create_layer(0, 0, "Instances", obj_cursor);
+var _tiles = tile_data[? "tiles"];
+
+_cursor.wfc_id = id;
+_cursor.num_tiles = ds_list_size(_tiles);
+with (_cursor) {
+	event_user(0);
+}*/

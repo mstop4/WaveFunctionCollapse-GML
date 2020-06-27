@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "kenneyroads.json",
+            "value": "kenneymonochrome.json",
             "varName": "tile_data_json",
             "varType": 2
         },
@@ -86,7 +86,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1,
-            "value": "ts_kenney_roads",
+            "value": "ts_kenney_monochrome",
             "varName": "tileset_index",
             "varType": 5
         },
@@ -100,7 +100,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "32",
+            "value": "16",
             "varName": "tile_width",
             "varType": 1
         },
@@ -114,7 +114,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "32",
+            "value": "16",
             "varName": "tile_height",
             "varType": 1
         },

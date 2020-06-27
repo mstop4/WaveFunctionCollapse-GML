@@ -2,8 +2,8 @@
   "tiles": [
     {
       "symmetry": "X",
-      "tileId": [ 1, 2, 3, 4, 5],
-      "weight": 1,
+      "tileId": [ 1, 2, 3, 4, 5 ],
+      "weight": 10,
       "sides": [
         { 
           "sideGroup": 0,
@@ -26,31 +26,31 @@
 
     {
       "symmetry": "X",
-      "tileId": 6,
-      "weight": 1,
+      "tileId": [ 1, 2, 3, 4, 5 ],
+      "weight": 2,
       "sides": [
         { 
-          "sideGroup": 1,
-          "neighbours": [ 0 ]
+          "sideGroup": 5,
+          "neighbours": [ 5 ]
         },
         { 
-          "sideGroup": 1,
-          "neighbours": [ 0 ]
+          "sideGroup": 5,
+          "neighbours": [ 5 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 5,
+          "neighbours": [ 5 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 5,
+          "neighbours": [ 5 ]
         }
       ]
     },
 
     {
       "symmetry": "X",
-      "tileId": 7,
+      "tileId": [ 6 ],
       "weight": 1,
       "sides": [
         { 
@@ -58,23 +58,23 @@
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 1,
+          "neighbours": [ 0 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 3,
+          "neighbours": [ 2 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 2,
+          "neighbours": [ 3 ]
         }
       ]
     },
 
     {
       "symmetry": "X",
-      "tileId": 8,
+      "tileId": [ 7 ],
       "weight": 1,
       "sides": [
         { 
@@ -82,12 +82,36 @@
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 3,
+          "neighbours": [ 2 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 5,
+          "neighbours": [ 5 ]
+        },
+        { 
+          "sideGroup": 2,
+          "neighbours": [ 3 ]
+        }
+      ]
+    },
+
+    {
+      "symmetry": "X",
+      "tileId": [ 8 ],
+      "weight": 1,
+      "sides": [
+        { 
+          "sideGroup": 1,
+          "neighbours": [ 0 ]
+        },
+        { 
+          "sideGroup": 3,
+          "neighbours": [ 2 ]
+        },
+        { 
+          "sideGroup": 2,
+          "neighbours": [ 3 ]
         },
         { 
           "sideGroup": 1,
@@ -98,44 +122,44 @@
 
     {
       "symmetry": "X",
-      "tileId": 9,
+      "tileId": [ 9 ],
       "weight": 1,
       "sides": [
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 2,
+          "neighbours": [ 3 ]
         },
         { 
           "sideGroup": 1,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 3,
+          "neighbours": [ 2 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 5,
+          "neighbours": [ 5 ]
         }
       ]
     },
 
     {
       "symmetry": "X",
-      "tileId": 10,
+      "tileId": [ 10 ],
       "weight": 1,
       "sides": [
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 3,
+          "neighbours": [ 2 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 5,
+          "neighbours": [ 5 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 2,
+          "neighbours": [ 3 ]
         },
         {
           "sideGroup": 1,
@@ -146,20 +170,20 @@
 
     {
       "symmetry": "X",
-      "tileId": 11,
+      "tileId": [ 11 ],
       "weight": 1,
       "sides": [
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 2,
+          "neighbours": [ 3 ]
         },
         { 
           "sideGroup": 1,
           "neighbours": [ 0 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 1,
+          "neighbours": [ 0 ]
         },
         {
           "sideGroup": 3,
@@ -170,12 +194,12 @@
 
     {
       "symmetry": "X",
-      "tileId": 12,
+      "tileId": [ 12 ],
       "weight": 1,
       "sides": [
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 5,
+          "neighbours": [ 5 ]
         },
         { 
           "sideGroup": 2,
@@ -194,20 +218,20 @@
 
     {
       "symmetry": "X",
-      "tileId": 13,
+      "tileId": [ 13 ],
       "weight": 1,
       "sides": [
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 3,
+          "neighbours": [ 2 ]
         },
         { 
           "sideGroup": 2,
           "neighbours": [ 3 ]
         },
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 1,
+          "neighbours": [ 0 ]
         },
         {
           "sideGroup": 1,
@@ -218,12 +242,12 @@
 
     {
       "symmetry": "X",
-      "tileId": 14,
+      "tileId": [ 14 ],
       "weight": 1,
       "sides": [
         { 
-          "sideGroup": 0,
-          "neighbours": [ 0, 1 ]
+          "sideGroup": 5,
+          "neighbours": [ 5]
         },
         { 
           "sideGroup": 2,

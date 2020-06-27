@@ -7,6 +7,9 @@ if (_cell[0] == -1) {
 }
 
 // Collapse cell
+last_collapse_x = _cell[0];
+last_collapse_y = _cell[1];
+
 wfc_collapse_cell(wave_grid[# _cell[0], _cell[1]]);
 done_grid[# _cell[0], _cell[1]] = CELL_STATE.COLLAPSED;
 ds_queue_enqueue(done_queue_x, _cell[0]);

@@ -103,6 +103,16 @@
             "enumb": 27,
             "eventtype": 9,
             "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
+        },
+        {
+            "id": "27e86c84-c926-4faf-9670-6032224c1ee2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -219,6 +229,20 @@
             "value": "-1",
             "varName": "alotted_time",
             "varType": 4
+        },
+        {
+            "id": "a21257ff-8377-4e27-99eb-3406cd4faf3a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "63",
+            "varName": "error_tile_index",
+            "varType": 1
         }
     ],
     "solid": false,

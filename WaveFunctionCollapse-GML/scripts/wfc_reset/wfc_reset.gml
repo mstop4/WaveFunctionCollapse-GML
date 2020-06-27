@@ -1,3 +1,4 @@
+errored = false;
 tilemap_clear(wfc_tilemap, 0);
 ds_grid_clear(done_grid, CELL_STATE.IDLE);
 ds_grid_clear(checked_grid, CELL_STATE.IDLE);

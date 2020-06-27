@@ -7,9 +7,9 @@ var _tile_data = argument[1];
 var _tile_index = argument[2];
 var _sides = _tile_data[? "sides"];
 
-_tile.tile_data = tile_set_index(_tile.tile_data, _tile_data[? "tileId"]);
 _tile.tile_index = _tile_index;
 _tile.tile_id = _tile_data[? "tileId"];
+_tile.tile_data = tile_set_index(_tile.tile_data, _tile.tile_id[| 0]);
 _tile.symmetry = _tile_data[? "symmetry"];
 _tile.symmetry_label = ds_map_find_key(symmetry_map, _tile_data[? "symmetry"]);
 _tile.weight = _tile_data[? "weight"];

@@ -40,6 +40,7 @@ if (state == WFC_STATE.IDLE) {
 		
 		if (!ok) {
 			state = WFC_STATE.IDLE;
+			errored = true;
 			show_message_async("Something went wrong");
 			show_message_async("Time taken: " + string((current_time - start_time) / 1000) + " s");
 			exit;
