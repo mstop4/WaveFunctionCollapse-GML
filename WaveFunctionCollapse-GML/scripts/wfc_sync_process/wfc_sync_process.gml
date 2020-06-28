@@ -42,7 +42,13 @@ if (state == WFC_STATE.IDLE) {
 		
 		if (!ok) {
 			state = WFC_STATE.IDLE;
-			errored = true;
+
+			if (track_errors) {
+				errored = true;
+				var _num_tile_ids = ds_list_size(last_collapse_tile_id);
+				last_collapse_tile_data = tile_set_index(last_collapse_tile_data, last_collapse_tile_id[| irandom(_num_tile_ids-1)]);
+			}
+
 			show_message_async("Something went wrong");
 			show_message_async("Time taken: " + string((current_time - start_time) / 1000) + " s");
 			exit;

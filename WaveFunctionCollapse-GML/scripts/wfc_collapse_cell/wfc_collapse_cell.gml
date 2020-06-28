@@ -29,15 +29,15 @@ var _choice = _cell_list[| _index];
 ds_list_clear(_cell_list);
 ds_list_add(_cell_list, _choice);
 
-var _tile_data = _tiles[| _choice];
-var _tile_id = _tile_data[? "tileId"];
-var _transforms = _tile_data[? "transforms"];
-var _num_tile_ids = ds_list_size(_tile_id);
+if (track_errors) {
+	var _tile_data = _tiles[| _choice];
+	var _transforms = _tile_data[? "transforms"];
 
-last_collapse_tile_data = 0;
-last_collapse_tile_data = tile_set_index(last_collapse_tile_data, _tile_id[| irandom(_num_tile_ids-1)]);
-last_collapse_tile_data = tile_set_rotate(last_collapse_tile_data, _transforms & 1);
-last_collapse_tile_data = tile_set_flip(last_collapse_tile_data, _transforms & 2);
-last_collapse_tile_data = tile_set_mirror(last_collapse_tile_data, _transforms & 4);
+	last_collapse_tile_id = _tile_data[? "tileId"];
+	last_collapse_tile_data = 0;
+	last_collapse_tile_data = tile_set_rotate(last_collapse_tile_data, _transforms & 1);
+	last_collapse_tile_data = tile_set_flip(last_collapse_tile_data, _transforms & 2);
+	last_collapse_tile_data = tile_set_mirror(last_collapse_tile_data, _transforms & 4);
+}
 
 ds_queue_destroy(_weights);

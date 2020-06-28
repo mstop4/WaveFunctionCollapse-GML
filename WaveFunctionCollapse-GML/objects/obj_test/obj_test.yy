@@ -253,6 +253,20 @@
             "value": "63",
             "varName": "error_tile_index",
             "varType": 1
+        },
+        {
+            "id": "06925388-231c-4921-8c68-0606f98b454e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "track_errors",
+            "varType": 3
         }
     ],
     "solid": false,

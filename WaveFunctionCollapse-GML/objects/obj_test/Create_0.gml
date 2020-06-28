@@ -17,11 +17,14 @@ wave_num = 0;
 propagation_done = false;
 start_time = 0;
 step_time = 0;
+get_seed_sync = -1;
+get_seed_async = -1;
 
 // error debugging
 errored = false;
 last_collapse_x = -1;
 last_collapse_y = -1;
+last_collapse_tile_id = -1;
 last_collapse_tile_data = 0;
 
 wfc_layer = layer_create(0);
