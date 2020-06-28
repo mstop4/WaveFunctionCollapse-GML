@@ -1,6 +1,8 @@
+/// @arg seed
+var _seed = argument[0];
+
 if (state == WFC_STATE.IDLE) {
-	randomise();
-	show_debug_message("Seed: " + string(random_get_seed()));
+	random_set_seed(_seed);
 	start_time = current_time;
 	async_mode = false;
 	wave_num = 0;
