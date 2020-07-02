@@ -50,11 +50,11 @@ if (state == WFC_STATE.IDLE) {
 			}
 
 			show_message_async("Something went wrong");
-			show_message_async("Time taken: " + string((current_time - start_time) / 1000) + " s");
+			time_taken = string((current_time - start_time) / 1000) + " s";
 			exit;
 		}
 	}
 	
 	state = WFC_STATE.IDLE;
-	show_message_async("Time taken: " + string((current_time - start_time) / 1000) + " s");
+	time_taken = string((current_time - start_time) / 1000) + " s";
 }

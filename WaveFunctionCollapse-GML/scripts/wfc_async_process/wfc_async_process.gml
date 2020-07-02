@@ -6,7 +6,7 @@ switch (state) {
 		var _wfc_done = wfc_begin_step();
 		if (_wfc_done) {
 			state = WFC_STATE.IDLE;
-			show_message_async("Time taken: " + string((current_time - start_time) / 1000) + " s");
+			time_taken = string((current_time - start_time) / 1000) + " s";
 			return true;
 			break;
 		}
@@ -34,6 +34,7 @@ switch (state) {
 			}
 
 			show_message_async("Something went wrong");
+			time_taken = string((current_time - start_time) / 1000) + " s";
 			return true;
 		} else if (!grid_changed) {
 			state = WFC_STATE.BEGIN_STEP;

@@ -21,6 +21,9 @@ step_time = 0;
 get_seed_sync = -1;
 get_seed_async = -1;
 seed = random_get_seed();
+progress = 0;
+max_progress = grid_width * grid_height;
+time_taken = "";
 
 // error debugging
 errored = false;

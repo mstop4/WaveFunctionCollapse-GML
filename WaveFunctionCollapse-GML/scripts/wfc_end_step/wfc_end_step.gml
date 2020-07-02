@@ -32,6 +32,7 @@ while (!ds_queue_empty(done_queue_x) && !ds_queue_empty(done_queue_y)) {
 			tilemap_set(wfc_tilemap, _data, _x, _y);
 			_ok = false;
 		}
+		progress++;
 		done_grid[# _x, _y] = CELL_STATE.TILED;
 	}
 }

@@ -7,6 +7,8 @@ ds_queue_clear(done_queue_x);
 ds_queue_clear(done_queue_y);
 ds_stack_clear(tile_stack_x);
 ds_stack_clear(tile_stack_y);
+progress = 0;
+time_taken = "";
 var _tiles = tile_data[? "tiles"];
 var _num_tiles = ds_list_size(_tiles);
 
@@ -21,7 +23,8 @@ for (var i=0; i<_num_tiles; i++) {
 		ds_list_add(_base_choices, i);
 }
 
-if (ds_list_size(_base_choices) == 0) {
+var _base_choices_len = ds_list_size(_base_choices);
+if (_base_choices_len == 0) {
 	show_message_async("No tiles available to use!");
 	return false;
 }
