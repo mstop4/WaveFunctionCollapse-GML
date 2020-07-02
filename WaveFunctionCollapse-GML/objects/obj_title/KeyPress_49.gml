@@ -1,1 +1,1 @@
-room_goto(room_demo);
+room_goto(room_wfc);

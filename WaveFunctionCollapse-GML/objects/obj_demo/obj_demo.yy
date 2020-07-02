@@ -2,7 +2,7 @@
     "id": "b13067fa-54dd-4a8d-ac42-a20781968367",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_test",
+    "name": "obj_demo",
     "eventList": [
         {
             "id": "3d44d068-f62d-4845-a7b2-bb9b84fd0ee7",
@@ -45,16 +45,6 @@
             "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
         },
         {
-            "id": "5fa803c6-7be5-4c1a-ad45-949f9ea545c7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 83,
-            "eventtype": 9,
-            "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
-        },
-        {
             "id": "73fd8c82-dc52-44d5-801d-abb445a3ae95",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -65,16 +55,6 @@
             "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
         },
         {
-            "id": "e5908012-2f2e-4626-9d74-d1599ce92cd3",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 65,
-            "eventtype": 9,
-            "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
-        },
-        {
             "id": "e1bf96a2-c498-45ea-8875-c7837c264e00",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -82,16 +62,6 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 82,
             "eventtype": 9,
-            "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
-        },
-        {
-            "id": "e8ae0a71-ab29-49d9-81bc-9f0170c8bba9",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 56,
-            "eventtype": 6,
             "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
         },
         {
@@ -122,6 +92,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 63,
             "eventtype": 7,
+            "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
+        },
+        {
+            "id": "138c762d-6e19-4261-9c8c-ebb33a7183d6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 65,
+            "eventtype": 9,
             "m_owner": "b13067fa-54dd-4a8d-ac42-a20781968367"
         }
     ],
@@ -171,6 +151,34 @@
             "varType": 5
         },
         {
+            "id": "71cbbd52-1221-489b-8028-11e8f113a9b3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "tilemap_offset_x",
+            "varType": 0
+        },
+        {
+            "id": "f83f2fec-0c8a-40f7-ba22-fe39125f1e4a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "tilemap_offset_y",
+            "varType": 0
+        },
+        {
             "id": "f1702235-4dd0-48a6-9170-9b876720d397",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -208,7 +216,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "ceil(room_width \/ tile_width)",
+            "value": "ceil((room_width - tilemap_offset_x) \/ tile_width)",
             "varName": "grid_width",
             "varType": 4
         },
@@ -222,7 +230,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "ceil(room_height \/ tile_height)",
+            "value": "ceil((room_height - tilemap_offset_y) \/ tile_height)",
             "varName": "grid_height",
             "varType": 4
         },

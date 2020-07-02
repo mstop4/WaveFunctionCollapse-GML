@@ -1,6 +1,7 @@
 init_data();
 window_set_size(room_width, room_height);
 surface_resize(application_surface, room_width, room_height);
+randomise();
 
 raw_tile_data = -1;
 tile_data = -1;
@@ -19,6 +20,7 @@ start_time = 0;
 step_time = 0;
 get_seed_sync = -1;
 get_seed_async = -1;
+seed = random_get_seed();
 
 // error debugging
 errored = false;
@@ -28,7 +30,7 @@ last_collapse_tile_id = -1;
 last_collapse_tile_data = 0;
 
 wfc_layer = layer_create(0);
-wfc_tilemap = layer_tilemap_create(wfc_layer, 0, 0, tileset_index, grid_width, grid_height);
+wfc_tilemap = layer_tilemap_create(wfc_layer, tilemap_offset_x, tilemap_offset_y, tileset_index, grid_width, grid_height);
 
 wave_grid = ds_grid_create(grid_width, grid_height);				// working grid of all possible tile indexes
 checked_grid = ds_grid_create(grid_width, grid_height);     // grid to keep track of which cells are checked
