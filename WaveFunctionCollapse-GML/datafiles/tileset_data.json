@@ -1,0 +1,57 @@
+{
+  "tilesets": [
+    {
+      "name": "Pipes",
+      "tilesetIndex": "ts_fences",
+      "tileDataJson": "fences.json",
+      "tileWidth": 32,
+      "tileHeight": 32,
+      "tilePreview": "spr_fences_preview" 
+    },
+
+    {
+      "name": "Kenney Abstract Platformer",
+      "tilesetIndex": "ts_kenney",
+      "tileDataJson": "kenney.json",
+      "tileWidth": 32,
+      "tileHeight": 32,
+      "tilePreview": "spr_kenney_preview" 
+    },
+
+    {
+      "name": "2-Corner Wang Tiles",
+      "tilesetIndex": "ts_terrain",
+      "tileDataJson": "terrain.json",
+      "tileWidth": 32,
+      "tileHeight": 32,
+      "tilePreview": "spr_terrain_preview" 
+    },
+
+    {
+      "name": "Circuit Board",
+      "tilesetIndex": "ts_elec",
+      "tileDataJson": "elec.json",
+      "tileWidth": 32,
+      "tileHeight": 32,
+      "tilePreview": "spr_elec_preview" 
+    },
+
+    {
+      "name": "Kenney Roads",
+      "tilesetIndex": "ts_kenney_roads",
+      "tileDataJson": "kenneyroads.json",
+      "tileWidth": 64,
+      "tileHeight": 64,
+      "tilePreview": "spr_kenney_roads_preview" 
+    },
+
+    {
+      "name": "Kenney Monochrome RPG",
+      "tilesetIndex": "ts_kenney_monochrome",
+      "tileDataJson": "kenneymonochrome.json",
+      "tileWidth": 16,
+      "tileHeight": 16,
+      "tilePreview": "spr_kenney_monochrome_preview" 
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+show_debug_message("Loading tile data: " + tile_data_json);
+
 if (ds_exists(raw_tile_data, ds_type_map)) {
 	ds_map_destroy(raw_tile_data);
 }
