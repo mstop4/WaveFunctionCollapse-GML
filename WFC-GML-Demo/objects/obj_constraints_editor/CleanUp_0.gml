@@ -1,3 +1,0 @@
-ds_list_destroy(entry_button_pool);
-ds_list_destroy(final_tile_buttons);
-ds_list_destroy(exemplar_tile_previews);

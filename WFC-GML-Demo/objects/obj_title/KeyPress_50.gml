@@ -1,1 +1,0 @@
-room_goto(room_debug_tiles);

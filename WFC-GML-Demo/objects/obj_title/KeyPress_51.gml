@@ -1,1 +1,0 @@
-room_goto(room_constraints_editor);
