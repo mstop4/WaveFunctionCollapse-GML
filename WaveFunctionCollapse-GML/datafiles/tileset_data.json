@@ -31,8 +31,8 @@
       "name": "Circuit Board",
       "tilesetIndex": "ts_elec",
       "tileDataJson": "elec.json",
-      "tileWidth": 32,
-      "tileHeight": 32,
+      "tileWidth": 16,
+      "tileHeight": 16,
       "tilePreview": "spr_elec_preview" 
     },
 

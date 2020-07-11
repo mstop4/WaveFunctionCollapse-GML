@@ -1,4 +1,6 @@
 errored = false;
+
+// Update grid attributes if tile size has changed
 var _old_w = grid_width;
 var _old_h = grid_height;
 grid_width = ceil((room_width - tilemap_offset_x) / tile_width);
@@ -10,7 +12,7 @@ if (_old_w != grid_width || _old_h != grid_height) {
 	show_debug_message("Resizing tilemap to " + string(grid_width) + "x" + string(grid_height));
 	tilemap_set_width(wfc_tilemap, grid_width);
 	tilemap_set_height(wfc_tilemap, grid_height);
-	ds_grid_resize(wave_grid, grid_width, grid_height);
+	wfc_resize_grid(wave_grid, grid_width, grid_height);
 	ds_grid_resize(checked_grid, grid_width, grid_height);
 	ds_grid_resize(done_grid, grid_width, grid_height);
 	max_progress = grid_width * grid_height;
